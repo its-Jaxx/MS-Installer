@@ -1,0 +1,104 @@
+{
+  "Games": {
+    "Cemu": {
+      "winget": "Cemu.Cemu",
+      "choco": "cemu",
+      "desc": "Cemu is a highly experimental software to emulate Wii U applications on PC."
+    },
+    "Clone Hero": {
+      "winget": "CloneHeroTeam.CloneHero",
+      "choco": "n/a",
+      "desc": "Clone Hero is a free rhythm game, which can be played with any 5 or 6 button guitar controller."
+    },
+    "EA App": {
+      "winget": "ElectronicArts.EADesktop",
+      "choco": "ea-app",
+      "desc": "EA App is a platform for accessing and playing Electronic Arts games."
+    },
+    "Emulation Station": {
+      "winget": "Emulationstation.Emulationstation",
+      "choco": "emulationstation",
+      "desc": "Emulation Station is a graphical and themeable emulator front-end that allows you to access all your favorite games in one place."
+    },
+    "Epic Games Launcher": {
+      "winget": "EpicGames.EpicGamesLauncher",
+      "choco": "epicgameslauncher",
+      "desc": "Epic Games Launcher is the client for accessing and playing games from the Epic Games Store."
+    },
+    "GeForce NOW": {
+      "winget": "Nvidia.GeForceNow",
+      "choco": "nvidia-geforce-now",
+      "desc": "GeForce NOW is a cloud gaming service that allows you to play high-quality PC games on your device."
+    },
+    "GOG Galaxy": {
+      "winget": "GOG.Galaxy",
+      "choco": "goggalaxy",
+      "desc": "GOG Galaxy is a gaming client that offers DRM-free games, additional content, and more."
+    },
+    "Heroic Games Launcher": {
+      "winget": "HeroicGamesLauncher.HeroicGamesLauncher",
+      "choco": "n/a",
+      "desc": "Heroic Games Launcher is an open-source alternative game launcher for Epic Games Store."
+    },
+    "Itch.io": {
+      "winget": "ItchIo.Itch",
+      "choco": "itch",
+      "desc": "Itch.io is a digital distribution platform for indie games and creative projects."
+    },
+    "Moonlight/GameStream Client": {
+      "winget": "MoonlightGameStreamingProject.Moonlight",
+      "choco": "moonlight-qt",
+      "desc": "Moonlight/GameStream Client allows you to stream PC games to other devices over your local network."
+    },
+    "Playnite": {
+      "winget": "Playnite.Playnite",
+      "choco": "playnite",
+      "desc": "Playnite is an open-source video game library manager with one simple goal: To provide a unified interface for all of your games."
+    },
+    "Prism Launcher": {
+      "winget": "PrismLauncher.PrismLauncher",
+      "choco": "prismlauncher",
+      "desc": "Prism Launcher is an Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods."
+    },
+    "PS Remote Play": {
+      "winget": "PlayStation.PSRemotePlay",
+      "choco": "ps-remote-play",
+      "desc": "PS Remote Play is a free application that allows you to stream games from your PlayStation console to a PC or mobile device."
+    },
+    "SideQuestVR": {
+      "winget": "SideQuestVR.SideQuest",
+      "choco": "sidequest",
+      "desc": "SideQuestVR is a community-driven platform that enables users to discover, install, and manage virtual reality content on Oculus Quest devices."
+    },
+    "Steam": {
+      "winget": "Valve.Steam",
+      "choco": "steam-client",
+      "desc": "Steam is a digital distribution platform for purchasing and playing video games, offering multiplayer gaming, video streaming, and more."
+    },
+    "Sunshine/GameStream Server": {
+      "winget": "LizardByte.Sunshine",
+      "choco": "sunshine",
+      "desc": "Sunshine is a GameStream server that allows you to remotely play PC games on Android devices, offering low-latency streaming."
+    },
+    "TCNO Account Switcher": {
+      "winget": "TechNobo.TcNoAccountSwitcher",
+      "choco": "tcno-acc-switcher",
+      "desc": "A Super-fast account switcher for Steam, Battle.net, Epic Games, Origin, Riot, Ubisoft and many others!"
+    },
+    "Ubisoft Connect": {
+      "winget": "Ubisoft.Connect",
+      "choco": "ubisoft-connect",
+      "desc": "Ubisoft Connect is Ubisoft's digital distribution and online gaming service, providing access to Ubisoft's games and services."
+    },
+    "Virtual Desktop Streamer": {
+      "winget": "VirtualDesktop.Streamer",
+      "choco": "n/a",
+      "desc": "Virtual Desktop Streamer is a tool that allows you to stream your desktop screen to VR devices."
+    },
+    "XEMU": {
+      "winget": "xemu-project.xemu",
+      "choco": "n/a",
+      "desc": "XEMU is an open-source Xbox emulator that allows you to play Xbox games on your PC, aiming for accuracy and compatibility."
+    }
+  }
+}

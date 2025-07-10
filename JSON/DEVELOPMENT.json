@@ -1,0 +1,254 @@
+{
+  "Development": {
+    "Anaconda": {
+      "winget": "Anaconda.Anaconda3",
+      "choco": "anaconda3",
+      "desc": "Anaconda is a distribution of the Python and R programming languages for scientific computing."
+    },
+    "Clink": {
+      "winget": "chrisant996.Clink",
+      "choco": "clink",
+      "desc": "Clink is a powerful Bash-compatible command-line interface (CLIenhancement for Windows, adding features like syntax highlighting and improved history)."
+    },
+    "CMake": {
+      "winget": "Kitware.CMake",
+      "choco": "cmake",
+      "desc": "CMake is an open-source, cross-platform family of tools designed to build, test and package software."
+    },
+    "DaxStudio": {
+      "winget": "DaxStudio.DaxStudio",
+      "choco": "daxstudio",
+      "desc": "DAX (Data Analysis eXpressions) Studio is the ultimate tool for executing and analyzing DAX queries against Microsoft Tabular models."
+    },
+    "Docker Desktop": {
+      "winget": "Docker.DockerDesktop",
+      "choco": "docker-desktop",
+      "desc": "Docker Desktop is a powerful tool for containerized application development and deployment."
+    },
+    "Git": {
+      "winget": "Git.Git",
+      "choco": "git",
+      "desc": "Git is a distributed version control system widely used for tracking changes in source code during software development."
+    },
+    "Git Butler": {
+      "winget": "GitButler.GitButler",
+      "choco": "n/a",
+      "desc": "A Git client for simultaneous branches on top of your existing workflow."
+    },
+    "Git Extensions": {
+      "winget": "GitExtensionsTeam.GitExtensions",
+      "choco": "git;gitextensions",
+      "desc": "Git Extensions is a graphical user interface for Git, providing additional features for easier source code management."
+    },
+    "GitHub CLI": {
+      "winget": "GitHub.cli",
+      "choco": "git;gh",
+      "desc": "GitHub CLI is a command-line tool that simplifies working with GitHub directly from the terminal."
+    },
+    "GitHub Desktop": {
+      "winget": "GitHub.GitHubDesktop",
+      "choco": "git;github-desktop",
+      "desc": "GitHub Desktop is a visual Git client that simplifies collaboration on GitHub repositories with an easy-to-use interface."
+    },
+    "GitKraken Client": {
+      "winget": "Axosoft.GitKraken",
+      "choco": "gitkraken",
+      "desc": "GitKraken Client is a powerful visual Git client from Axosoft that works with ALL git repositories on any hosting environment."
+    },
+    "Godot Engine": {
+      "winget": "GodotEngine.GodotEngine",
+      "choco": "godot",
+      "desc": "Godot Engine is a free, open-source 2D and 3D game engine with a focus on usability and flexibility."
+    },
+    "Gitify": {
+      "winget": "Gitify.Gitify",
+      "choco": "n/a",
+      "desc": "GitHub notifications on your menu bar."
+    },
+    "Go": {
+      "winget": "GoLang.Go",
+      "choco": "golang",
+      "desc": "Go (or Golang) is a statically typed, compiled programming language designed for simplicity, reliability, and efficiency."
+    },
+    "Helix": {
+      "winget": "Helix.Helix",
+      "choco": "helix",
+      "desc": "Helix is a neovim alternative built in rust."
+    },
+    "Amazon Corretto 8 (LTS)": {
+      "winget": "Amazon.Corretto.8.JDK",
+      "choco": "corretto8jdk",
+      "desc": "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK)."
+    },
+    "Amazon Corretto 11 (LTS)": {
+      "winget": "Amazon.Corretto.11.JDK",
+      "choco": "corretto11jdk",
+      "desc": "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK)."
+    },
+    "Amazon Corretto 17 (LTS)": {
+      "winget": "Amazon.Corretto.17.JDK",
+      "choco": "corretto17jdk",
+      "desc": "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK)."
+    },
+    "Amazon Corretto 21 (LTS)": {
+      "winget": "Amazon.Corretto.21.JDK",
+      "choco": "corretto21jdk",
+      "desc": "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK)."
+    },
+    "Jetbrains Toolbox": {
+      "winget": "JetBrains.Toolbox",
+      "choco": "jetbrainstoolbox",
+      "desc": "Jetbrains Toolbox is a platform for easy installation and management of JetBrains developer tools."
+    },
+    "Lazygit": {
+      "winget": "JesseDuffield.lazygit",
+      "choco": "lazygit",
+      "desc": "Simple terminal UI for git commands"
+    },
+    "Neovim": {
+      "winget": "Neovim.Neovim",
+      "choco": "neovim",
+      "desc": "Neovim is a highly extensible text editor and an improvement over the original Vim editor."
+    },
+    "NodeJS": {
+      "winget": "OpenJS.NodeJS",
+      "choco": "nodejs",
+      "desc": "NodeJS is a JavaScript runtime built on Chrome's V8 JavaScript engine for building server-side and networking applications."
+    },
+    "NodeJS LTS": {
+      "winget": "OpenJS.NodeJS.LTS",
+      "choco": "nodejs-lts",
+      "desc": "NodeJS LTS provides Long-Term Support releases for stable and reliable server-side JavaScript development."
+    },
+    "Node Version Manager": {
+      "winget": "CoreyButler.NVMforWindows",
+      "choco": "nvm",
+      "desc": "Node Version Manager (NVM) for Windows allows you to easily switch between multiple Node.js versions."
+    },
+    "Oh My Posh (Prompt)": {
+      "winget": "JanDeDobbeleer.OhMyPosh",
+      "choco": "oh-my-posh",
+      "desc": "Oh My Posh is a cross-platform prompt theme engine for any shell."
+    },
+    "Postman": {
+      "winget": "Postman.Postman",
+      "choco": "postman",
+      "desc": "Postman is a collaboration platform for API development that simplifies the process of developing APIs."
+    },
+    "Python3": {
+      "winget": "Python.Python.3.12",
+      "choco": "python",
+      "desc": "Python is a versatile programming language used for web development, data analysis, artificial intelligence, and more."
+    },
+    "Rust": {
+      "winget": "Rustlang.Rust.MSVC",
+      "choco": "rust",
+      "desc": "Rust is a programming language designed for safety and performance, particularly focused on systems programming."
+    },
+    "Starship (Shell Prompt)": {
+      "winget": "starship",
+      "choco": "starship",
+      "desc": "Starship is a minimal, fast, and customizable prompt for any shell."
+    },
+    "Sublime Merge": {
+      "winget": "SublimeHQ.SublimeMerge",
+      "choco": "sublimemerge",
+      "desc": "Sublime Merge is a Git client with advanced features and a beautiful interface."
+    },
+    "Sublime Text": {
+      "winget": "SublimeHQ.SublimeText.4",
+      "choco": "sublimetext4",
+      "desc": "Sublime Text is a sophisticated text editor for code, markup, and prose."
+    },
+    "Swift toolchain": {
+      "winget": "Swift.Toolchain",
+      "choco": "n/a",
+      "desc": "Swift is a general-purpose programming language that's approachable for newcomers and powerful for experts."
+    },
+    "Thonny Python IDE": {
+      "winget": "AivarAnnamaa.Thonny",
+      "choco": "thonny",
+      "desc": "Python IDE for beginners."
+    },
+    "Code With Mu (Mu Editor)": {
+      "winget": "Mu.Mu",
+      "choco": "n/a",
+      "desc": "Mu is a Python code editor for beginner programmers"
+    },
+    "Unity Game Engine": {
+      "winget": "Unity.UnityHub",
+      "choco": "unityhub",
+      "desc": "Unity is a powerful game development platform for creating 2D, 3D, augmented reality, and virtual reality games."
+    },
+    "Vagrant": {
+      "winget": "Hashicorp.Vagrant",
+      "choco": "vagrant",
+      "desc": "Vagrant is an open-source tool for building and managing virtualized development environments."
+    },
+    "Visual Studio 2022": {
+      "winget": "Microsoft.VisualStudio.2022.Community",
+      "choco": "visualstudio2022community",
+      "desc": "Visual Studio 2022 is an integrated development environment (IDE) for building, debugging, and deploying applications."
+    },
+    "VS Code": {
+      "winget": "Microsoft.VisualStudioCode",
+      "choco": "vscode",
+      "desc": "Visual Studio Code is a free, open-source code editor with support for multiple programming languages."
+    },
+    "VS Codium": {
+      "winget": "VSCodium.VSCodium",
+      "choco": "vscodium",
+      "desc": "VSCodium is a community-driven, freely-licensed binary distribution of Microsoft's VS Code."
+    },
+    "Wezterm": {
+      "winget": "wez.wezterm",
+      "choco": "wezterm",
+      "desc": "WezTerm is a powerful cross-platform terminal emulator and multiplexer"
+    },
+    "Yarn": {
+      "winget": "Yarn.Yarn",
+      "choco": "yarn",
+      "desc": "Yarn is a fast, reliable, and secure dependency management tool for JavaScript projects."
+    },
+    "Miniconda": {
+      "winget": "Anaconda.Miniconda3",
+      "choco": "miniconda3",
+      "desc": "Miniconda is a free minimal installer for conda. It is a small bootstrap version of Anaconda that includes only conda, Python, the packages they both depend on, and a small number of other useful packages (like pip, zlib, and a few others)."
+    },
+    "Pixi": {
+      "winget": "prefix-dev.pixi",
+      "choco": "pixi",
+      "desc": "Pixi is a fast software package manager built on top of the existing conda ecosystem. Spins up development environments quickly on Windows, macOS and Linux. Pixi supports Python, R, C/C++, Rust, Ruby, and many other languages."
+    },
+    "Eclipse Temurin": {
+      "winget": "EclipseAdoptium.Temurin.21.JDK",
+      "choco": "temurin",
+      "desc": "Eclipse Temurin is the open source Java SE build based upon OpenJDK."
+    },
+    "Python Version Manager (pyenv-win)": {
+      "winget": "n/a",
+      "choco": "pyenv-win",
+      "desc": "pyenv for Windows is a simple python version management tool. It lets you easily switch between multiple versions of Python."
+    },
+    "Fast Node Manager": {
+      "winget": "Schniz.fnm",
+      "choco": "fnm",
+      "desc": "Fast Node Manager (fnm) allows you to switch your Node version by using the Terminal"
+    },
+    "Pulsar": {
+      "winget": "Pulsar-Edit.Pulsar",
+      "choco": "pulsar",
+      "desc": "A Community-led Hyper-Hackable Text Editor"
+    },
+    "Aegisub": {
+      "winget": "Aegisub.Aegisub",
+      "choco": "aegisub",
+      "desc": "Aegisub is a free, cross-platform open source tool for creating and modifying subtitles. Aegisub makes it quick and easy to time subtitles to audio, and features many powerful tools for styling them, including a built-in real-time video preview."
+    },
+    "Fork": {
+      "winget": "Fork.Fork",
+      "choco": "git-fork",
+      "desc": "Fork - a fast and friendly git client."
+    }
+  }
+}

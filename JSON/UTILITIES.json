@@ -1,0 +1,659 @@
+{
+  "Utilities": {
+    "1Password": {
+      "winget": "AgileBits.1Password",
+      "choco": "1password",
+      "desc": "1Password is a password manager that allows you to store and manage your passwords securely."
+    },
+    "7-Zip": {
+      "winget": "7zip.7zip",
+      "choco": "7zip",
+      "desc": "7-Zip is a free and open-source file archiver utility. It supports several compression formats and provides a high compression ratio, making it a popular choice for file compression."
+    },
+    "Alacritty Terminal": {
+      "winget": "Alacritty.Alacritty",
+      "choco": "alacritty",
+      "desc": "Alacritty is a fast, cross-platform, and GPU-accelerated terminal emulator. It is designed for performance and aims to be the fastest terminal emulator available."
+    },
+    "AnyDesk": {
+      "winget": "AnyDesk.AnyDesk",
+      "choco": "anydesk",
+      "desc": "AnyDesk is a remote desktop software that enables users to access and control computers remotely. It is known for its fast connection and low latency."
+    },
+    "AutoHotkey": {
+      "winget": "AutoHotkey.AutoHotkey",
+      "choco": "autohotkey",
+      "desc": "AutoHotkey is a scripting language for Windows that allows users to create custom automation scripts and macros. It is often used for automating repetitive tasks and customizing keyboard shortcuts."
+    },
+    "Barrier": {
+      "winget": "DebaucheeOpenSourceGroup.Barrier",
+      "choco": "barrier",
+      "desc": "Barrier is an open-source software KVM (keyboard, video, and mouseswitch). It allows users to control multiple computers with a single keyboard and mouse, even if they have different operating systems."
+    },
+    "Bat (Cat)": {
+      "winget": "sharkdp.bat",
+      "choco": "bat",
+      "desc": "Bat is a cat command clone with syntax highlighting. It provides a user-friendly and feature-rich alternative to the traditional cat command for viewing and concatenating files."
+    },
+    "Bitwarden": {
+      "winget": "Bitwarden.Bitwarden",
+      "choco": "bitwarden",
+      "desc": "Bitwarden is an open-source password management solution. It allows users to store and manage their passwords in a secure and encrypted vault, accessible across multiple devices."
+    },
+    "BleachBit": {
+      "winget": "BleachBit.BleachBit",
+      "choco": "bleachbit",
+      "desc": "Clean Your System and Free Disk Space"
+    },
+    "Bulk Crap Uninstaller": {
+      "winget": "Klocman.BulkCrapUninstaller",
+      "choco": "bulk-crap-uninstaller",
+      "desc": "Bulk Crap Uninstaller is a free and open-source uninstaller utility for Windows. It helps users remove unwanted programs and clean up their system by uninstalling multiple applications at once."
+    },
+    "Bulk Rename Utility": {
+      "winget": "TGRMNSoftware.BulkRenameUtility",
+      "choco": "bulkrenameutility",
+      "desc": "Bulk Rename Utility allows you to easily rename files and folders recursively based upon find-replace, character place, fields, sequences, regular expressions, EXIF data, and more."
+    },
+    "Advanced Renamer": {
+      "winget": "HulubuluSoftware.AdvancedRenamer",
+      "choco": "advanced-renamer",
+      "desc": "Advanced Renamer is a program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways."
+    },
+    "Carnac": {
+      "winget": "code52.Carnac",
+      "choco": "carnac",
+      "desc": "Carnac is a keystroke visualizer for Windows. It displays keystrokes in an overlay, making it useful for presentations, tutorials, and live demonstrations."
+    },
+    "CopyQ (Clipboard Manager)": {
+      "winget": "hluk.CopyQ",
+      "choco": "copyq",
+      "desc": "CopyQ is a clipboard manager with advanced features, allowing you to store, edit, and retrieve clipboard history."
+    },
+    "CPU-Z": {
+      "winget": "CPUID.CPU-Z",
+      "choco": "cpu-z",
+      "desc": "CPU-Z is a system monitoring and diagnostic tool for Windows. It provides detailed information about the computer's hardware components, including the CPU, memory, and motherboard."
+    },
+    "Crystal Disk Info": {
+      "winget": "CrystalDewWorld.CrystalDiskInfo",
+      "choco": "crystaldiskinfo",
+      "desc": "Crystal Disk Info is a disk health monitoring tool that provides information about the status and performance of hard drives. It helps users anticipate potential issues and monitor drive health."
+    },
+    "CapFrameX": {
+      "winget": "CXWorld.CapFrameX",
+      "choco": "n/a",
+      "desc": "Frametimes capture and analysis tool based on Intel's PresentMon. Overlay provided by Rivatuner Statistics Server."
+    },
+    "Crystal Disk Mark": {
+      "winget": "CrystalDewWorld.CrystalDiskMark",
+      "choco": "crystaldiskmark",
+      "desc": "Crystal Disk Mark is a disk benchmarking tool that measures the read and write speeds of storage devices. It helps users assess the performance of their hard drives and SSDs."
+    },
+    "Display Driver Uninstaller": {
+      "winget": "Wagnardsoft.DisplayDriverUninstaller",
+      "choco": "ddu",
+      "desc": "Display Driver Uninstaller (DDU) is a tool for completely uninstalling graphics drivers from NVIDIA, AMD, and Intel. It is useful for troubleshooting graphics driver-related issues."
+    },
+    "Deluge": {
+      "winget": "DelugeTeam.Deluge",
+      "choco": "deluge",
+      "desc": "Deluge is a free and open-source BitTorrent client. It features a user-friendly interface, support for plugins, and the ability to manage torrents remotely."
+    },
+    "DevToys": {
+      "winget": "DevToys-app.DevToys",
+      "choco": "devtoys",
+      "desc": "DevToys is a collection of development-related utilities and tools for Windows. It includes tools for file management, code formatting, and productivity enhancements for developers."
+    },
+    "Ditto": {
+      "winget": "Ditto.Ditto",
+      "choco": "ditto",
+      "desc": "Ditto is an extension to the standard windows clipboard."
+    },
+    "Dual Monitor Tools": {
+      "winget": "GNE.DualMonitorTools",
+      "choco": "dual-monitor-tools",
+      "desc": "Dual Monitor Tools (DMT) is a FOSS app that allows you to customize the handling of multiple monitors. Useful for fullscreen games and apps that handle a second monitor poorly and can improve your workflow."
+    },
+    "Duplicati": {
+      "winget": "Duplicati.Duplicati",
+      "choco": "duplicati",
+      "desc": "Duplicati is an open-source backup solution that supports encrypted, compressed, and incremental backups. It is designed to securely store data on cloud storage services."
+    },
+    "Everything Search": {
+      "winget": "voidtools.Everything",
+      "choco": "everything",
+      "desc": "Everything Search is a fast and efficient file search utility for Windows."
+    },
+    "Espanso": {
+      "winget": "Espanso.Espanso",
+      "choco": "espanso",
+      "desc": "Cross-platform and open-source Text Expander written in Rust"
+    },
+    "Fastfetch": {
+      "winget": "Fastfetch-cli.Fastfetch",
+      "choco": "n/a",
+      "desc": "Fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way"
+    },
+    "File-Converter": {
+      "winget": "AdrienAllard.FileConverter",
+      "choco": "file-converter",
+      "desc": "File Converter is a very simple tool which allows you to convert and compress one or several file(s) using the context menu in windows explorer."
+    },
+    "Files": {
+      "winget": "n/a",
+      "choco": "files",
+      "desc": "Alternative file explorer."
+    },
+    "Flow launcher": {
+      "winget": "Flow-Launcher.Flow-Launcher",
+      "choco": "flow-launcher",
+      "desc": "Keystroke launcher for Windows to search, manage and launch files, folders bookmarks, websites and more."
+    },
+    "F.lux": {
+      "winget": "flux.flux",
+      "choco": "flux",
+      "desc": "f.lux adjusts the color temperature of your screen to reduce eye strain during nighttime use."
+    },
+    "Fzf": {
+      "winget": "junegunn.fzf",
+      "choco": "fzf",
+      "desc": "A command-line fuzzy finder"
+    },
+    "Glary Utilities": {
+      "winget": "Glarysoft.GlaryUtilities",
+      "choco": "glaryutilities-free",
+      "desc": "Glary Utilities is a comprehensive system optimization and maintenance tool for Windows."
+    },
+    "Google Drive": {
+      "winget": "Google.GoogleDrive",
+      "choco": "googledrive",
+      "desc": "File syncing across devices all tied to your google account"
+    },
+    "GPU-Z": {
+      "winget": "TechPowerUp.GPU-Z",
+      "choco": "gpu-z",
+      "desc": "GPU-Z provides detailed information about your graphics card and GPU."
+    },
+    "Gsudo": {
+      "winget": "gerardog.gsudo",
+      "choco": "gsudo",
+      "desc": "Gsudo is a sudo implementation for Windows, allowing elevated privilege execution."
+    },
+    "HWiNFO": {
+      "winget": "REALiX.HWiNFO",
+      "choco": "hwinfo",
+      "desc": "HWiNFO provides comprehensive hardware information and diagnostics for Windows."
+    },
+    "HWMonitor": {
+      "winget": "CPUID.HWMonitor",
+      "choco": "hwmonitor",
+      "desc": "HWMonitor is a hardware monitoring program that reads PC systems main health sensors."
+    },
+    "JDownloader": {
+      "winget": "AppWork.JDownloader",
+      "choco": "jdownloader",
+      "desc": "JDownloader is a feature-rich download manager with support for various file hosting services."
+    },
+    "JPEG View": {
+      "winget": "sylikc.JPEGView",
+      "choco": "jpegview",
+      "desc": "JPEGView is a lean, fast and highly configurable viewer/editor for JPEG, BMP, PNG, WEBP, TGA, GIF, JXL, HEIC, HEIF, AVIF and TIFF images with a minimal GUI"
+    },
+    "KDE Connect": {
+      "winget": "KDE.KDEConnect",
+      "choco": "kdeconnect-kde",
+      "desc": "KDE Connect allows seamless integration between your KDE desktop and mobile devices."
+    },
+    "KeePassXC": {
+      "winget": "KeePassXCTeam.KeePassXC",
+      "choco": "keepassxc",
+      "desc": "KeePassXC is a cross-platform, open-source password manager with strong encryption features."
+    },
+    "Link Shell extension": {
+      "winget": "HermannSchinagl.LinkShellExtension",
+      "choco": "linkshellextension",
+      "desc": "Link Shell Extension (LSE) provides for the creation of Hardlinks, Junctions, Volume Mountpoints, Symbolic Links, a folder cloning process that utilises Hardlinks or Symbolic Links and a copy process taking care of Junctions, Symbolic Links, and Hardlinks. LSE, as its name implies is implemented as a Shell extension and is accessed from Windows Explorer, or similar file/folder managers."
+    },
+    "Lively Wallpaper": {
+      "winget": "rocksdanister.LivelyWallpaper",
+      "choco": "lively",
+      "desc": "Free and open-source software that allows users to set animated desktop wallpapers and screensavers."
+    },
+    "LocalSend": {
+      "winget": "LocalSend.LocalSend",
+      "choco": "localsend.install",
+      "desc": "An open source cross-platform alternative to AirDrop."
+    },
+    "LockHunter": {
+      "winget": "CrystalRich.LockHunter",
+      "choco": "lockhunter",
+      "desc": "LockHunter is a free tool to delete files blocked by something you do not know."
+    },
+    "Malwarebytes": {
+      "winget": "Malwarebytes.Malwarebytes",
+      "choco": "malwarebytes",
+      "desc": "Malwarebytes is an anti-malware software that provides real-time protection against threats."
+    },
+    "Meld": {
+      "winget": "Meld.Meld",
+      "choco": "meld",
+      "desc": "Meld is a visual diff and merge tool for files and directories."
+    },
+    "Monitorian": {
+      "winget": "emoacht.Monitorian",
+      "choco": "monitorian",
+      "desc": "Monitorian is a utility for adjusting monitor brightness and contrast on Windows."
+    },
+    "Motrix Download Manager": {
+      "winget": "agalwood.Motrix",
+      "choco": "motrix",
+      "desc": "A full-featured download manager."
+    },
+    "MSEdgeRedirect": {
+      "winget": "rcmaehl.MSEdgeRedirect",
+      "choco": "msedgeredirect",
+      "desc": "A Tool to Redirect News, Search, Widgets, Weather, and More to Your Default Browser."
+    },
+    "MSI Afterburner": {
+      "winget": "Guru3D.Afterburner",
+      "choco": "msiafterburner",
+      "desc": "MSI Afterburner is a graphics card overclocking utility with advanced features."
+    },
+    "Borderless Gaming": {
+      "winget": "Codeusa.BorderlessGaming",
+      "choco": "borderlessgaming",
+      "desc": "Play your favorite games in a borderless window; no more time consuming alt-tabs."
+    },
+    "Compact GUI": {
+      "winget": "IridiumIO.CompactGUI",
+      "choco": "compactgui",
+      "desc": "Transparently compress active games and programs using Windows 10/11 APIs"
+    },
+    "ExifCleaner": {
+      "winget": "szTheory.exifcleaner",
+      "choco": "n/a",
+      "desc": "Desktop app to clean metadata from images, videos, PDFs, and other files."
+    },
+    "NanaZip": {
+      "winget": "M2Team.NanaZip",
+      "choco": "nanazip",
+      "desc": "NanaZip is a fast and efficient file compression and decompression tool."
+    },
+    "Neofetch": {
+      "winget": "nepnep.neofetch-win",
+      "choco": "n/a",
+      "desc": "Neofetch is a command-line utility for displaying system information in a visually appealing way."
+    },
+    "Nextcloud Desktop": {
+      "winget": "Nextcloud.NextcloudDesktop",
+      "choco": "nextcloud-client",
+      "desc": "Nextcloud Desktop is the official desktop client for the Nextcloud file synchronization and sharing platform."
+    },
+    "Nushell": {
+      "winget": "Nushell.Nushell",
+      "choco": "nushell",
+      "desc": "Nushell is a new shell that takes advantage of modern hardware and systems to provide a powerful, expressive, and fast experience."
+    },
+    "NVCleanstall": {
+      "winget": "TechPowerUp.NVCleanstall",
+      "choco": "n/a",
+      "desc": "NVCleanstall is a tool designed to customize NVIDIA driver installations, allowing advanced users to control more aspects of the installation process."
+    },
+    "OPAutoClicker": {
+      "winget": "OPAutoClicker.OPAutoClicker",
+      "choco": "autoclicker",
+      "desc": "A full-fledged autoclicker with two modes of autoclicking, at your dynamic cursor location or at a prespecified location."
+    },
+    "OpenHashTab": {
+      "winget": "namazso.OpenHashTab",
+      "choco": "openhashtab",
+      "desc": "OpenHashTab is a shell extension for conveniently calculating and checking file hashes from file properties."
+    },
+    "OpenRGB": {
+      "winget": "CalcProgrammer1.OpenRGB",
+      "choco": "openrgb",
+      "desc": "OpenRGB is an open-source RGB lighting control software designed to manage and control RGB lighting for various components and peripherals."
+    },
+    "Open Shell (Start Menu)": {
+      "winget": "Open-Shell.Open-Shell-Menu",
+      "choco": "open-shell",
+      "desc": "Open Shell is a Windows Start Menu replacement with enhanced functionality and customization options."
+    },
+    "Oracle VirtualBox": {
+      "winget": "Oracle.VirtualBox",
+      "choco": "virtualbox",
+      "desc": "Oracle VirtualBox is a powerful and free open-source virtualization tool for x86 and AMD64/Intel64 architectures."
+    },
+    "ownCloud Desktop": {
+      "winget": "ownCloud.ownCloudDesktop",
+      "choco": "owncloud-client",
+      "desc": "ownCloud Desktop is the official desktop client for the ownCloud file synchronization and sharing platform."
+    },
+    "Parsec": {
+      "winget": "Parsec.Parsec",
+      "choco": "parsec",
+      "desc": "Parsec is a low-latency, high-quality remote desktop sharing application for collaborating and gaming across devices."
+    },
+    "PeaZip": {
+      "winget": "Giorgiotani.Peazip",
+      "choco": "peazip",
+      "desc": "PeaZip is a free, open-source file archiver utility that supports multiple archive formats and provides encryption features."
+    },
+    "Raspberry Pi Imager": {
+      "winget": "RaspberryPiFoundation.RaspberryPiImager",
+      "choco": "rpi-imager",
+      "desc": "Raspberry Pi Imager is a utility for writing operating system images to SD cards for Raspberry Pi devices."
+    },
+    "Process Lasso": {
+      "winget": "BitSum.ProcessLasso",
+      "choco": "plasso",
+      "desc": "Process Lasso is a system optimization and automation tool that improves system responsiveness and stability by adjusting process priorities and CPU affinities."
+    },
+    "OrcaSlicer": {
+      "winget": "SoftFever.OrcaSlicer",
+      "choco": "orcaslicer",
+      "desc": "G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)"
+    },
+    "PrusaSlicer": {
+      "winget": "Prusa3d.PrusaSlicer",
+      "choco": "prusaslicer",
+      "desc": "PrusaSlicer is a powerful and easy-to-use slicing software for 3D printing with Prusa 3D printers."
+    },
+    "qBittorrent": {
+      "winget": "qBittorrent.qBittorrent",
+      "choco": "qbittorrent",
+      "desc": "qBittorrent is a free and open-source BitTorrent client that aims to provide a feature-rich and lightweight alternative to other torrent clients."
+    },
+    "Transmission": {
+      "winget": "Transmission.Transmission",
+      "choco": "transmission",
+      "desc": "Transmission is a cross-platform BitTorrent client that is open source, easy, powerful, and lean."
+    },
+    "Tixati": {
+      "winget": "Tixati.Tixati.Portable",
+      "choco": "tixati.portable",
+      "desc": "Tixati is a cross-platform BitTorrent client written in C++ that has been designed to be light on system resources."
+    },
+    "Quicklook": {
+      "winget": "QL-Win.QuickLook",
+      "choco": "quicklook",
+      "desc": "Bring macOS ?Quick Look? feature to Windows"
+    },
+    "Rainmeter": {
+      "winget": "Rainmeter.Rainmeter",
+      "choco": "n/a",
+      "desc": "Rainmeter is a desktop customization tool that allows you to create and share customizable skins for your desktop."
+    },
+    "Revo Uninstaller": {
+      "winget": "RevoUninstaller.RevoUninstaller",
+      "choco": "revo-uninstaller",
+      "desc": "Revo Uninstaller is an advanced uninstaller tool that helps you remove unwanted software and clean up your system."
+    },
+    "Wise Program Uninstaller (WiseCleaner)": {
+      "winget": "WiseCleaner.WiseProgramUninstaller",
+      "choco": "n/a",
+      "desc": "Wise Program Uninstaller is the perfect solution for uninstalling Windows programs, allowing you to uninstall applications quickly and completely using its simple and user-friendly interface."
+    },
+    "Ripgrep": {
+      "winget": "BurntSushi.ripgrep.MSVC",
+      "choco": "ripgrep",
+      "desc": "Fast and powerful commandline search tool"
+    },
+    "Rufus Imager": {
+      "winget": "Rufus.Rufus",
+      "choco": "rufus",
+      "desc": "Rufus is a utility that helps format and create bootable USB drives, such as USB keys or pen drives."
+    },
+    "SageThumbs": {
+      "winget": "CherubicSoftware.SageThumbs",
+      "choco": "sagethumbs",
+      "desc": "Provides support for thumbnails in Explorer with more formats."
+    },
+    "Sandboxie Plus": {
+      "winget": "Sandboxie.Plus",
+      "choco": "sandboxie",
+      "desc": "Sandboxie Plus is a sandbox-based isolation program that provides enhanced security by running applications in an isolated environment."
+    },
+    "Snappy Driver Installer Origin": {
+      "winget": "GlennDelahoy.SnappyDriverInstallerOrigin",
+      "choco": "sdio",
+      "desc": "Snappy Driver Installer Origin is a free and open-source driver updater with a vast driver database for Windows."
+    },
+    "Nilesoft Shell": {
+      "winget": "Nilesoft.Shell",
+      "choco": "nilesoft-shell",
+      "desc": "Shell is an expanded context menu tool that adds extra functionality and customization options to the Windows context menu."
+    },
+    "SignalRGB": {
+      "winget": "WhirlwindFX.SignalRgb",
+      "choco": "n/a",
+      "desc": "SignalRGB lets you control and sync your favorite RGB devices with one free application."
+    },
+    "Spacedrive File Manager": {
+      "winget": "spacedrive.Spacedrive",
+      "choco": "n/a",
+      "desc": "Spacedrive is a file manager that offers cloud storage integration and file synchronization across devices."
+    },
+    "SpaceSniffer": {
+      "winget": "UderzoSoftware.SpaceSniffer",
+      "choco": "spacesniffer",
+      "desc": "A tool application that lets you understand how folders and files are structured on your disks"
+    },
+    "SuperF4": {
+      "winget": "StefanSundin.Superf4",
+      "choco": "superf4",
+      "desc": "SuperF4 is a utility that allows you to terminate programs instantly by pressing a customizable hotkey."
+    },
+    "SyncTrayzor": {
+      "winget": "SyncTrayzor.SyncTrayzor",
+      "choco": "synctrayzor",
+      "desc": "Windows tray utility / filesystem watcher / launcher for Syncthing"
+    },
+    "Tabby.sh": {
+      "winget": "Eugeny.Tabby",
+      "choco": "tabby",
+      "desc": "Tabby is a highly configurable terminal emulator, SSH and serial client for Windows, macOS and Linux"
+    },
+    "Tailscale": {
+      "winget": "tailscale.tailscale",
+      "choco": "tailscale",
+      "desc": "Tailscale is a secure and easy-to-use VPN solution for connecting your devices and networks."
+    },
+    "TeamViewer": {
+      "winget": "TeamViewer.TeamViewer",
+      "choco": "teamviewer9",
+      "desc": "TeamViewer is a popular remote access and support software that allows you to connect to and control remote devices."
+    },
+    "Total Commander": {
+      "winget": "Ghisler.TotalCommander",
+      "choco": "TotalCommander",
+      "desc": "Total Commander is a file manager for Windows that provides a powerful and intuitive interface for file management."
+    },
+    "TreeSize Free": {
+      "winget": "JAMSoftware.TreeSize.Free",
+      "choco": "treesizefree",
+      "desc": "TreeSize Free is a disk space manager that helps you analyze and visualize the space usage on your drives."
+    },
+    "Translucent Taskbar": {
+      "winget": "9PF4KZ2VN4W9",
+      "choco": "translucenttb",
+      "desc": "Translucent Taskbar is a tool that allows you to customize the transparency of the Windows taskbar."
+    },
+    "Twinkle Tray": {
+      "winget": "xanderfrangos.twinkletray",
+      "choco": "twinkle-tray",
+      "desc": "Twinkle Tray lets you easily manage the brightness levels of multiple monitors."
+    },
+    "Wazuh.": {
+      "winget": "Wazuh.WazuhAgent",
+      "choco": "wazuh-agent",
+      "desc": "Wazuh is an open-source security monitoring platform that offers intrusion detection, compliance checks, and log analysis."
+    },
+    "Windows PC Health Check": {
+      "winget": "Microsoft.WindowsPCHealthCheck",
+      "choco": "n/a",
+      "desc": "Windows PC Health Check is a tool that helps you check if your PC meets the system requirements for Windows 11."
+    },
+    "WindowGrid": {
+      "winget": "n/a",
+      "choco": "windowgrid",
+      "desc": "WindowGrid is a modern window management program for Windows that allows the user to quickly and easily layout their windows on a dynamic grid using just the mouse."
+    },
+    "UniGetUI": {
+      "winget": "MartiCliment.UniGetUI",
+      "choco": "wingetui",
+      "desc": "UniGetUI is a GUI for Winget, Chocolatey, and other Windows CLI package managers."
+    },
+    "WinPaletter": {
+      "winget": "Abdelrhman-AK.WinPaletter",
+      "choco": "WinPaletter",
+      "desc": "WinPaletter is a tool for adjusting the color palette of Windows 10, providing customization options for window colors."
+    },
+    "WinRAR": {
+      "winget": "RARLab.WinRAR",
+      "choco": "winrar",
+      "desc": "WinRAR is a powerful archive manager that allows you to create, manage, and extract compressed files."
+    },
+    "WiseToys": {
+      "winget": "WiseCleaner.WiseToys",
+      "choco": "n/a",
+      "desc": "WiseToys is a set of utilities and tools designed to enhance and optimize your Windows experience."
+    },
+    "TeraCopy": {
+      "winget": "CodeSector.TeraCopy",
+      "choco": "TeraCopy",
+      "desc": "Copy your files faster and more securely"
+    },
+    "WizFile": {
+      "winget": "AntibodySoftware.WizFile",
+      "choco": "n/a",
+      "desc": "Find files by name on your hard drives almost instantly."
+    },
+    "WizTree": {
+      "winget": "AntibodySoftware.WizTree",
+      "choco": "wiztree",
+      "desc": "WizTree is a fast disk space analyzer that helps you quickly find the files and folders consuming the most space on your hard drive."
+    },
+    "Xtreme Download Manager": {
+      "winget": "subhra74.XtremeDownloadManager",
+      "choco": "xdm",
+      "desc": "Xtreme Download Manager is an advanced download manager with support for various protocols and browsers.*Browser integration deprecated by google store. No official release.*"
+    },
+    "HxD Hex Editor": {
+      "winget": "MHNexus.HxD",
+      "choco": "HxD",
+      "desc": "HxD is a free hex editor that allows you to edit, view, search, and analyze binary files."
+    },
+    "XnView classic": {
+      "winget": "XnSoft.XnView.Classic",
+      "choco": "xnview",
+      "desc": "XnView is an efficient image viewer, browser and converter for Windows."
+    },
+    "ZeroTier One": {
+      "winget": "ZeroTier.ZeroTierOne",
+      "choco": "zerotier-one",
+      "desc": "ZeroTier One is a software-defined networking tool that allows you to create secure and scalable networks."
+    },
+    "ZoomIt": {
+      "winget": "Microsoft.Sysinternals.ZoomIt",
+      "choco": "n/a",
+      "desc": "A screen zoom, annotation, and recording tool for technical presentations and demos"
+    },
+    "Zoxide": {
+      "winget": "ajeetdsouza.zoxide",
+      "choco": "zoxide",
+      "desc": "Zoxide is a fast and efficient directory changer (cd) that helps you navigate your file system with ease."
+    },
+    "Syncthingtray": {
+      "winget": "Martchus.syncthingtray",
+      "choco": "syncthingtray",
+      "desc": "Might be the alternative for Synctrayzor. Windows tray utility / filesystem watcher / launcher for Syncthing"
+    },
+    "Intel-PresentMon": {
+      "winget": "Intel.PresentMon.Beta",
+      "choco": "n/a",
+      "desc": "A new gaming performance overlay and telemetry application to monitor and measure your gaming experience."
+    },
+    "TightVNC": {
+      "winget": "GlavSoft.TightVNC",
+      "choco": "TightVNC",
+      "desc": "TightVNC is a free and Open Source remote desktop software that lets you access and control a computer over the network. With its intuitive interface, you can interact with the remote screen as if you were sitting in front of it. You can open files, launch applications, and perform other actions on the remote desktop almost as if you were physically there"
+    },
+    "UltraVNC": {
+      "winget": "uvncbvba.UltraVnc",
+      "choco": "ultravnc",
+      "desc": "UltraVNC is a powerful, easy to use and free - remote pc access softwares - that can display the screen of another computer (via internet or network) on your own screen. The program allows you to use your mouse and keyboard to control the other PC remotely. It means that you can work on a remote computer, as if you were sitting in front of it, right from your current location."
+    },
+    "Windows Firewall Control": {
+      "winget": "BiniSoft.WindowsFirewallControl",
+      "choco": "windowsfirewallcontrol",
+      "desc": "Windows Firewall Control is a powerful tool which extends the functionality of Windows Firewall and provides new extra features which makes Windows Firewall better."
+    },
+    "VistaSwitcher": {
+      "winget": "ntwind.VistaSwitcher",
+      "choco": "n/a",
+      "desc": "VistaSwitcher makes it easier for you to locate windows and switch focus, even on multi-monitor systems. The switcher window consists of an easy-to-read list of all tasks running with clearly shown titles and a full-sized preview of the selected task."
+    },
+    "Windows Auto Dark Mode": {
+      "winget": "Armin2208.WindowsAutoNightMode",
+      "choco": "auto-dark-mode",
+      "desc": "Automatically switches between the dark and light theme of Windows 10 and Windows 11"
+    },
+    "Ambie White Noise": {
+      "winget": "9P07XNM5CHP0",
+      "choco": "n/a",
+      "desc": "Ambie is the ultimate app to help you focus, study, or relax. We use white noise and nature sounds combined with an innovative focus timer to keep you concentrated on doing your best work."
+    },
+    "Magic Wormhole": {
+      "winget": "magic-wormhole.magic-wormhole",
+      "choco": "magic-wormhole",
+      "desc": "get things from one computer to another, safely"
+    },
+    "croc": {
+      "winget": "schollz.croc",
+      "choco": "croc",
+      "desc": "Easily and securely send things from one computer to another."
+    },
+    "GlazeWM": {
+      "winget": "glzr-io.glazewm",
+      "choco": "n/a",
+      "desc": "GlazeWM is a tiling window manager for Windows inspired by i3 and Polybar"
+    },
+    "FanControl": {
+      "winget": "Rem0o.FanControl",
+      "choco": "n/a",
+      "desc": "Fan Control is a free and open-source software that allows the user to control his CPU, GPU and case fans using temperatures."
+    },
+    "Windhawk": {
+      "winget": "RamenSoftware.Windhawk",
+      "choco": "windhawk",
+      "desc": "The customization marketplace for Windows programs"
+    },
+    "ForceAutoHDR": {
+      "winget": "ForceAutoHDR.7gxycn08",
+      "choco": "n/a",
+      "desc": "ForceAutoHDR simplifies the process of adding games to the AutoHDR list in the Windows Registry"
+    },
+    "JoyToKey": {
+      "winget": "JTKsoftware.JoyToKey",
+      "choco": "joytokey",
+      "desc": "enables PC game controllers to emulate the keyboard and mouse input"
+    },
+    "Dropbox": {
+      "winget": "Dropbox.Dropbox",
+      "choco": "n/a",
+      "desc": "The Dropbox desktop app! Save hard drive space, share and edit files and send for signature ? all without the distraction of countless browser tabs."
+    },
+    "OFGB (Oh Frick Go Back)": {
+      "winget": "xM4ddy.OFGB",
+      "choco": "ofgb",
+      "desc": "GUI Tool to remove ads from various places around Windows 11"
+    },
+    "Lenovo Legion Toolkit": {
+      "winget": "BartoszCichecki.LenovoLegionToolkit",
+      "choco": "n/a",
+      "desc": "Lenovo Legion Toolkit (LLT) is a open-source utility created for Lenovo Legion (and similar) series laptops, that allows changing a couple of features that are only available in Lenovo Vantage or Legion Zone. It runs no background services, uses less memory, uses virtually no CPU, and contains no telemetry. Just like Lenovo Vantage, this application is Windows only."
+    }
+  }
+}

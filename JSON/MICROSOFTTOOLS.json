@@ -1,0 +1,109 @@
+{
+  "Microsoft Tools": {
+    "Autoruns": {
+      "winget": "Microsoft.Sysinternals.Autoruns",
+      "choco": "autoruns",
+      "desc": "This utility shows you what programs are configured to run during system bootup or login"
+    },
+    "RDCMan": {
+      "winget": "Microsoft.Sysinternals.RDCMan",
+      "choco": "rdcman",
+      "desc": "RDCMan manages multiple remote desktop connections. It is useful for managing server labs where you need regular access to each machine such as automated checkin systems and data centers."
+    },
+    "Microsoft Azure Data Studio": {
+      "winget": "Microsoft.AzureDataStudio",
+      "choco": "azure-data-studio",
+      "desc": "Azure Data Studio is a data management tool that enables you to work with SQL Server, Azure SQL DB and SQL DW from Windows, macOS and Linux."
+    },
+    ".NET Desktop Runtime 3.1": {
+      "winget": "Microsoft.DotNet.DesktopRuntime.3_1",
+      "choco": "dotnetcore3-desktop-runtime",
+      "desc": ".NET Desktop Runtime 3.1 is a runtime environment required for running applications developed with .NET Core 3.1."
+    },
+    ".NET Desktop Runtime 5": {
+      "winget": "Microsoft.DotNet.DesktopRuntime.5",
+      "choco": "dotnet-5.0-runtime",
+      "desc": ".NET Desktop Runtime 5 is a runtime environment required for running applications developed with .NET 5."
+    },
+    ".NET Desktop Runtime 6": {
+      "winget": "Microsoft.DotNet.DesktopRuntime.6",
+      "choco": "dotnet-6.0-runtime",
+      "desc": ".NET Desktop Runtime 6 is a runtime environment required for running applications developed with .NET 6."
+    },
+    ".NET Desktop Runtime 7": {
+      "winget": "Microsoft.DotNet.DesktopRuntime.7",
+      "choco": "dotnet-7.0-runtime",
+      "desc": ".NET Desktop Runtime 7 is a runtime environment required for running applications developed with .NET 7."
+    },
+    ".NET Desktop Runtime 8": {
+      "winget": "Microsoft.DotNet.DesktopRuntime.8",
+      "choco": "dotnet-8.0-runtime",
+      "desc": ".NET Desktop Runtime 8 is a runtime environment required for running applications developed with .NET 8."
+    },
+    ".NET Desktop Runtime 9": {
+      "winget": "Microsoft.DotNet.DesktopRuntime.9",
+      "choco": "dotnet-9.0-runtime",
+      "desc": ".NET Desktop Runtime 9 is a runtime environment required for running applications developed with .NET 9."
+    },
+    "NuGet": {
+      "winget": "Microsoft.NuGet",
+      "choco": "nuget.commandline",
+      "desc": "NuGet is a package manager for the .NET framework, enabling developers to manage and share libraries in their .NET applications."
+    },
+    "OneDrive": {
+      "winget": "Microsoft.OneDrive",
+      "choco": "onedrive",
+      "desc": "OneDrive is a cloud storage service provided by Microsoft, allowing users to store and share files securely across devices."
+    },
+    "Power Automate": {
+      "winget": "Microsoft.PowerAutomateDesktop",
+      "choco": "powerautomatedesktop",
+      "desc": "Using Power Automate Desktop you can automate tasks on the desktop as well as the Web."
+    },
+    "Power BI": {
+      "winget": "Microsoft.PowerBI",
+      "choco": "powerbi",
+      "desc": "Create stunning reports and visualizations with Power BI Desktop. It puts visual analytics at your fingertips with intuitive report authoring. Drag-and-drop to place content exactly where you want it on the flexible and fluid canvas. Quickly discover patterns as you explore a single unified view of linked, interactive visualizations."
+    },
+    "PowerShell": {
+      "winget": "Microsoft.PowerShell",
+      "choco": "powershell-core",
+      "desc": "PowerShell is a task automation framework and scripting language designed for system administrators, offering powerful command-line capabilities."
+    },
+    "PowerToys": {
+      "winget": "Microsoft.PowerToys",
+      "choco": "powertoys",
+      "desc": "PowerToys is a set of utilities for power users to enhance productivity, featuring tools like FancyZones, PowerRename, and more."
+    },
+    "SysInternals Process Monitor": {
+      "winget": "Microsoft.Sysinternals.ProcessMonitor",
+      "choco": "procexp",
+      "desc": "SysInternals Process Monitor is an advanced monitoring tool that shows real-time file system, registry, and process/thread activity."
+    },
+    "Microsoft SQL Server Management Studio": {
+      "winget": "Microsoft.SQLServerManagementStudio",
+      "choco": "sql-server-management-studio",
+      "desc": "SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL Database. SSMS provides tools to configure, monitor, and administer instances of SQL Server and databases."
+    },
+    "SysInternals TCPView": {
+      "winget": "Microsoft.Sysinternals.TCPView",
+      "choco": "tcpview",
+      "desc": "SysInternals TCPView is a network monitoring tool that displays a detailed list of all TCP and UDP endpoints on your system."
+    },
+    "Windows Terminal": {
+      "winget": "Microsoft.WindowsTerminal",
+      "choco": "microsoft-windows-terminal",
+      "desc": "Windows Terminal is a modern, fast, and efficient terminal application for command-line users, supporting multiple tabs, panes, and more."
+    },
+    "Visual C++ 2015-2022 32-bit": {
+      "winget": "Microsoft.VCRedist.2015+.x86",
+      "choco": "n/a",
+      "desc": "Visual C++ 2015-2022 32-bit redistributable package installs runtime components of Visual C++ libraries required to run 32-bit applications."
+    },
+    "Visual C++ 2015-2022 64-bit": {
+      "winget": "Microsoft.VCRedist.2015+.x64",
+      "choco": "n/a",
+      "desc": "Visual C++ 2015-2022 64-bit redistributable package installs runtime components of Visual C++ libraries required to run 64-bit applications."
+    }
+  }
+}

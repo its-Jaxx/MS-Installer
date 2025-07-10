@@ -1,0 +1,119 @@
+{
+  "Browsers": {
+    "Brave": {
+      "winget": "Brave.Brave",
+      "choco": "brave",
+      "desc": "Brave is a privacy-focused web browser that blocks ads and trackers, offering a faster and safer browsing experience."
+    },
+    "Chrome": {
+      "winget": "Google.Chrome",
+      "choco": "googlechrome",
+      "desc": "Google Chrome is a widely used web browser known for its speed, simplicity, and seamless integration with Google services."
+    },
+    "Chromium": {
+      "winget": "Hibbiki.Chromium",
+      "choco": "chromium",
+      "desc": "Chromium is the open-source project that serves as the foundation for various web browsers, including Chrome."
+    },
+    "Edge": {
+      "winget": "Microsoft.Edge",
+      "choco": "microsoft-edge",
+      "desc": "Microsoft Edge is a modern web browser built on Chromium, offering performance, security, and integration with Microsoft services."
+    },
+    "Falkon": {
+      "winget": "KDE.Falkon",
+      "choco": "falkon",
+      "desc": "Falkon is a lightweight and fast web browser with a focus on user privacy and efficiency."
+    },
+    "Firefox": {
+      "winget": "Mozilla.Firefox",
+      "choco": "firefox",
+      "desc": "Mozilla Firefox is an open-source web browser known for its customization options, privacy features, and extensions."
+    },
+    "Firefox ESR": {
+      "winget": "Mozilla.Firefox.ESR",
+      "choco": "FirefoxESR",
+      "desc": "Mozilla Firefox is an open-source web browser known for its customization options, privacy features, and extensions. Firefox ESR (Extended Support Release) receives major updates every 42 weeks with minor updates such as crash fixes, security fixes and policy updates as needed, but at least every four weeks."
+    },
+    "Floorp": {
+      "winget": "Ablaze.Floorp",
+      "choco": "n/a",
+      "desc": "Floorp is an open-source web browser project that aims to provide a simple and fast browsing experience."
+    },
+    "LibreWolf": {
+      "winget": "LibreWolf.LibreWolf",
+      "choco": "librewolf",
+      "desc": "LibreWolf is a privacy-focused web browser based on Firefox, with additional privacy and security enhancements."
+    },
+    "Mullvad Browser": {
+      "winget": "MullvadVPN.MullvadBrowser",
+      "choco": "n/a",
+      "desc": "Mullvad Browser is a privacy-focused web browser, developed in partnership with the Tor Project."
+    },
+    "Thorium Browser AVX2": {
+      "winget": "Alex313031.Thorium.AVX2",
+      "choco": "n/a",
+      "desc": "Browser built for speed over vanilla chromium. It is built with AVX2 optimizations and is the fastest browser on the market."
+    },
+    "Tor Browser": {
+      "winget": "TorProject.TorBrowser",
+      "choco": "tor-browser",
+      "desc": "Tor Browser is designed for anonymous web browsing, utilizing the Tor network to protect user privacy and security."
+    },
+    "Ungoogled": {
+      "winget": "eloston.ungoogled-chromium",
+      "choco": "ungoogled-chromium",
+      "desc": "Ungoogled Chromium is a version of Chromium without Google's integration for enhanced privacy and control."
+    },
+    "Vivaldi": {
+      "winget": "Vivaldi.Vivaldi",
+      "choco": "vivaldi",
+      "desc": "Vivaldi is a highly customizable web browser with a focus on user personalization and productivity features."
+    },
+    "Waterfox": {
+      "winget": "Waterfox.Waterfox",
+      "choco": "waterfox",
+      "desc": "Waterfox is a fast, privacy-focused web browser based on Firefox, designed to preserve user choice and privacy."
+    },
+    "PaleMoon": {
+      "winget": "MoonchildProductions.PaleMoon",
+      "choco": "paleMoon",
+      "desc": "Pale Moon is an Open Source, Goanna-based web browser available for Microsoft Windows and Linux (with other operating systems in development), focusing on efficiency and ease of use."
+    },
+    "Zen Browser": {
+      "winget": "Zen-Team.Zen-Browser",
+      "choco": "n/a",
+      "desc": "The modern, privacy-focused, performance-driven browser built on Firefox"
+    },
+    "Opera": {
+      "winget": "Opera.Opera",
+      "choco": "opera",
+      "desc": "Opera is a multi-platform web browser developed by Opera Software. Opera is a Chromium-based browser. It distinguishes itself from other browsers through its user interface, functionality, and other features."
+    },
+    "SeaMonkey": {
+      "winget": "Mozilla.SeaMonkey",
+      "choco": "seamonkey",
+      "desc": "The SeaMonkey project is a community effort to develop the SeaMonkey Internet Application Suite."
+    },
+    "The World": {
+      "winget": "Phoenix.TheWorld",
+      "choco": "n/a",
+      "desc": "The World is a lightweight and fast dual-core browser with small size, fast startup, fast webpage loading, low usage, smooth experience, etc. The advantages are clearer on medium and low performance computers."
+    },
+    "Otter": {
+      "winget": "OtterBrowserTeam.OtterBrowser",
+      "choco": "otter-browser",
+      "desc": "Otter Browser aims to recreate the best aspects of the classic Opera (12.x) UI using Qt5."
+    },
+    "COS Browser": {
+      "winget": "Tencent.COSBrowser",
+      "choco": "n/a",
+      "desc": "COSBrowser is a visual interface tool launched by Tencent Cloud to make it easier and simpler for you to view, transfer, manage, and interact with COS resources."
+    },
+    "Yandex": {
+      "winget": "Yandex.Browser",
+      "choco": "yandex-browser",
+      "desc": "The quick and secure browser from Yandex for computers. Webpages load quickly on slow connections, you are protected from viruses and scammers, and fast search."
+    }
+  }
+}

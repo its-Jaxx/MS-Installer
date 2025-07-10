@@ -1,0 +1,114 @@
+{
+  "Communication": {
+    "Chatterino": {
+      "winget": "ChatterinoTeam.Chatterino",
+      "choco": "chatterino",
+      "desc": "Chatterino is a chat client for Twitch chat that offers a clean and customizable interface for a better streaming experience."
+    },
+    "Discord": {
+      "winget": "Discord.Discord",
+      "choco": "discord",
+      "desc": "Discord is a popular communication platform with voice, video, and text chat, designed for gamers but used by a wide range of communities."
+    },
+    "Ferdium": {
+      "winget": "Ferdium.Ferdium",
+      "choco": "ferdium",
+      "desc": "Ferdium is a messaging application that combines multiple messaging services into a single app for easy management."
+    },
+    "Guilded": {
+      "winget": "Guilded.Guilded",
+      "choco": "n/a",
+      "desc": "Guilded is a communication and productivity platform that includes chat, scheduling, and collaborative tools for gaming and communities."
+    },
+    "Hexchat": {
+      "winget": "HexChat.HexChat",
+      "choco": "hexchat",
+      "desc": "HexChat is a free, open-source IRC (Internet Relay Chat) client with a graphical interface for easy communication."
+    },
+    "Jami": {
+      "winget": "SFLinux.Jami",
+      "choco": "jami",
+      "desc": "Jami is a secure and privacy-focused communication platform that offers audio and video calls, messaging, and file sharing."
+    },
+    "Linphone": {
+      "winget": "BelledonneCommunications.Linphone",
+      "choco": "linphone",
+      "desc": "Linphone is an open-source voice over IP (VoIPservice that allows for audio and video calls, messaging, and more."
+    },
+    "Element": {
+      "winget": "Element.Element",
+      "choco": "element-desktop",
+      "desc": "Element is a client for Matrix?an open network for secure, decentralized communication."
+    },
+    "QTox": {
+      "winget": "Tox.qTox",
+      "choco": "qtox",
+      "desc": "QTox is a free and open-source messaging app that prioritizes user privacy and security in its design."
+    },
+    "Revolt": {
+      "winget": "Revolt.RevoltDesktop",
+      "choco": "n/a",
+      "desc": "Find your community, connect with the world. Revolt is one of the best ways to stay connected with your friends and community without sacrificing any usability."
+    },
+    "Session": {
+      "winget": "Oxen.Session",
+      "choco": "session",
+      "desc": "Session is a private and secure messaging app built on a decentralized network for user privacy and data protection."
+    },
+    "Signal": {
+      "winget": "OpenWhisperSystems.Signal",
+      "choco": "signal",
+      "desc": "Signal is a privacy-focused messaging app that offers end-to-end encryption for secure and private communication."
+    },
+    "Slack": {
+      "winget": "SlackTechnologies.Slack",
+      "choco": "slack",
+      "desc": "Slack is a collaboration hub that connects teams and facilitates communication through channels, messaging, and file sharing."
+    },
+    "Teams": {
+      "winget": "Microsoft.Teams",
+      "choco": "microsoft-teams",
+      "desc": "Microsoft Teams is a collaboration platform that integrates with Office 365 and offers chat, video conferencing, file sharing, and more."
+    },
+    "Telegram": {
+      "winget": "Telegram.TelegramDesktop",
+      "choco": "telegram",
+      "desc": "Telegram is a cloud-based instant messaging app known for its security features, speed, and simplicity."
+    },
+    "Unigram": {
+      "winget": "Telegram.Unigram",
+      "choco": "n/a",
+      "desc": "Unigram - Telegram for Windows"
+    },
+    "Thunderbird": {
+      "winget": "Mozilla.Thunderbird",
+      "choco": "thunderbird",
+      "desc": "Mozilla Thunderbird is a free and open-source email client, news client, and chat client with advanced features."
+    },
+    "Betterbird": {
+      "winget": "Betterbird.Betterbird",
+      "choco": "betterbird",
+      "desc": "Betterbird is a fork of Mozilla Thunderbird with additional features and bugfixes."
+    },
+    "Vesktop": {
+      "winget": "Vencord.Vesktop",
+      "choco": "n/a",
+      "desc": "A cross platform electron-based desktop app aiming to give you a snappier Discord experience with Vencord pre-installed."
+    },
+    "Viber": {
+      "winget": "Rakuten.Viber",
+      "choco": "viber",
+      "desc": "Viber is a free messaging and calling app with features like group chats, video calls, and more."
+    },
+    "Zoom": {
+      "winget": "Zoom.Zoom",
+      "choco": "zoom",
+      "desc": "Zoom is a popular video conferencing and web conferencing service for online meetings, webinars, and collaborative projects."
+    },
+    "Zulip": {
+      "winget": "Zulip.Zulip",
+      "choco": "zulip",
+      "desc": "Zulip is an open-source team collaboration tool with chat streams for productive and organized communication."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "Pro Tools": {
+    "Advanced IP Scanner": {
+      "winget": "Famatech.AdvancedIPScanner",
+      "choco": "advanced-ip-scanner",
+      "desc": "Advanced IP Scanner is a fast and easy-to-use network scanner. It is designed to analyze LAN networks and provides information about connected devices."
+    },
+    "Angry IP Scanner": {
+      "winget": "angryziber.AngryIPScanner",
+      "choco": "angryip",
+      "desc": "Angry IP Scanner is an open-source and cross-platform network scanner. It is used to scan IP addresses and ports, providing information about network connectivity."
+    },
+    "EFI Boot Editor": {
+      "winget": "EFIBootEditor.EFIBootEditor",
+      "choco": "n/a",
+      "desc": "EFI Boot Editor is a tool for managing the EFI/UEFI boot entries on your system. It allows you to customize the boot configuration of your computer."
+    },
+    "HeidiSQL": {
+      "winget": "HeidiSQL.HeidiSQL",
+      "choco": "heidisql",
+      "desc": "HeidiSQL is a powerful and easy-to-use client for MySQL, MariaDB, Microsoft SQL Server, and PostgreSQL databases. It provides tools for database management and development."
+    },
+    "mRemoteNG": {
+      "winget": "mRemoteNG.mRemoteNG",
+      "choco": "mremoteng",
+      "desc": "mRemoteNG is a free and open-source remote connections manager. It allows you to view and manage multiple remote sessions in a single interface."
+    },
+    "Mullvad VPN": {
+      "winget": "MullvadVPN.MullvadVPN",
+      "choco": "mullvad-app",
+      "desc": "This is the VPN client software for the Mullvad VPN service."
+    },
+    "NetBird": {
+      "winget": "netbird",
+      "choco": "netbird",
+      "desc": "NetBird is a Open Source alternative comparable to TailScale that can be connected to a selfhosted Server."
+    },
+    "Nmap": {
+      "winget": "Insecure.Nmap",
+      "choco": "nmap",
+      "desc": "Nmap (Network Mapper) is an open-source tool for network exploration and security auditing. It discovers devices on a network and provides information about their ports and services."
+    },
+    "OpenVPN Connect": {
+      "winget": "OpenVPNTechnologies.OpenVPNConnect",
+      "choco": "openvpn-connect",
+      "desc": "OpenVPN Connect is an open-source VPN client that allows you to connect securely to a VPN server. It provides a secure and encrypted connection for protecting your online privacy."
+    },
+    "Portmaster": {
+      "winget": "Safing.Portmaster",
+      "choco": "portmaster",
+      "desc": "Portmaster is a free and open-source application that puts you back in charge over all your computers network connections."
+    },
+    "PuTTY": {
+      "winget": "PuTTY.PuTTY",
+      "choco": "putty",
+      "desc": "PuTTY is a free and open-source terminal emulator, serial console, and network file transfer application. It supports various network protocols such as SSH, Telnet, and SCP."
+    },
+    "RustDesk": {
+      "winget": "RustDesk.RustDesk",
+      "choco": "rustdesk.portable",
+      "desc": "RustDesk is a free and open-source remote desktop application. It provides a secure way to connect to remote machines and access desktop environments."
+    },
+    "Simplewall": {
+      "winget": "Henry++.simplewall",
+      "choco": "simplewall",
+      "desc": "Simplewall is a free and open-source firewall application for Windows. It allows users to control and manage the inbound and outbound network traffic of applications."
+    },
+    "Ventoy": {
+      "winget": "Ventoy.Ventoy",
+      "choco": "ventoy",
+      "desc": "Ventoy is an open-source tool for creating bootable USB drives. It supports multiple ISO files on a single USB drive, making it a versatile solution for installing operating systems."
+    },
+    "WinSCP": {
+      "winget": "WinSCP.WinSCP",
+      "choco": "winscp",
+      "desc": "WinSCP is a popular open-source SFTP, FTP, and SCP client for Windows. It allows secure file transfers between a local and a remote computer."
+    },
+    "WireGuard": {
+      "winget": "WireGuard.WireGuard",
+      "choco": "wireguard",
+      "desc": "WireGuard is a fast and modern VPN (Virtual Private Network) protocol. It aims to be simpler and more efficient than other VPN protocols, providing secure and reliable connections."
+    },
+    "Wireshark": {
+      "winget": "WiresharkFoundation.Wireshark",
+      "choco": "wireshark",
+      "desc": "Wireshark is a widely-used open-source network protocol analyzer. It allows users to capture and analyze network traffic in real-time, providing detailed insights into network activities."
+    },
+    "XPipe": {
+      "winget": "xpipe-io.xpipe",
+      "choco": "xpipe",
+      "desc": "XPipe is an open-source tool for orchestrating containerized applications. It simplifies the deployment and management of containerized services in a distributed environment."
+    }
+  }
+}

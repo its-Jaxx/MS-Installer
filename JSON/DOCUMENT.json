@@ -1,0 +1,129 @@
+{
+  "Document": {
+    "Adobe Acrobat Reader": {
+      "winget": "Adobe.Acrobat.Reader.64-bit",
+      "choco": "adobereader",
+      "desc": "Adobe Acrobat Reader is a free PDF viewer with essential features for viewing, printing, and annotating PDF documents."
+    },
+    "AFFiNE": {
+      "winget": "ToEverything.AFFiNE",
+      "choco": "n/a",
+      "desc": "AFFiNE is an open source alternative to Notion. Write, draw, plan all at once. Selfhost it to sync across devices."
+    },
+    "Anki": {
+      "winget": "Anki.Anki",
+      "choco": "anki",
+      "desc": "Anki is a flashcard application that helps you memorize information with intelligent spaced repetition."
+    },
+    "Calibre": {
+      "winget": "calibre.calibre",
+      "choco": "calibre",
+      "desc": "Calibre is a powerful and easy-to-use e-book manager, viewer, and converter."
+    },
+    "Foxit PDF Editor": {
+      "winget": "Foxit.PhantomPDF",
+      "choco": "n/a",
+      "desc": "Foxit PDF Editor is a feature-rich PDF editor and viewer with a familiar ribbon-style interface."
+    },
+    "Foxit PDF Reader": {
+      "winget": "Foxit.FoxitReader",
+      "choco": "foxitreader",
+      "desc": "Foxit PDF Reader is a free PDF viewer with a familiar ribbon-style interface."
+    },
+    "Joplin (FOSS Notes)": {
+      "winget": "Joplin.Joplin",
+      "choco": "joplin",
+      "desc": "Joplin is an open-source note-taking and to-do application with synchronization capabilities."
+    },
+    "LibreOffice": {
+      "winget": "TheDocumentFoundation.LibreOffice",
+      "choco": "libreoffice-fresh",
+      "desc": "LibreOffice is a powerful and free office suite, compatible with other major office suites."
+    },
+    "Logseq": {
+      "winget": "Logseq.Logseq",
+      "choco": "logseq",
+      "desc": "Logseq is a versatile knowledge management and note-taking application designed for the digital thinker. With a focus on the interconnectedness of ideas, Logseq allows users to seamlessly organize their thoughts through a combination of hierarchical outlines and bi-directional linking. It supports both structured and unstructured content, enabling users to create a personalized knowledge graph that adapts to their evolving ideas and insights."
+    },
+    "massCode (Snippet Manager)": {
+      "winget": "antonreshetov.massCode",
+      "choco": "n/a",
+      "desc": "massCode is a fast and efficient open-source code snippet manager for developers."
+    },
+    "NAPS2 (Document Scanner)": {
+      "winget": "Cyanfish.NAPS2",
+      "choco": "naps2",
+      "desc": "NAPS2 is a document scanning application that simplifies the process of creating electronic documents."
+    },
+    "Notepad++": {
+      "winget": "Notepad++.Notepad++",
+      "choco": "notepadplusplus",
+      "desc": "Notepad++ is a free, open-source code editor and Notepad replacement with support for multiple languages."
+    },
+    "Obsidian": {
+      "winget": "Obsidian.Obsidian",
+      "choco": "obsidian",
+      "desc": "Obsidian is a powerful note-taking and knowledge management application."
+    },
+    "Okular": {
+      "winget": "KDE.Okular",
+      "choco": "okular",
+      "desc": "Okular is a versatile document viewer with advanced features."
+    },
+    "ONLYOffice Desktop": {
+      "winget": "ONLYOFFICE.DesktopEditors",
+      "choco": "onlyoffice",
+      "desc": "ONLYOffice Desktop is a comprehensive office suite for document editing and collaboration."
+    },
+    "PDF24 creator": {
+      "winget": "geeksoftwareGmbH.PDF24Creator",
+      "choco": "pdf24",
+      "desc": "Free and easy-to-use online/desktop PDF tools that make you more productive"
+    },
+    "PDFsam Basic": {
+      "winget": "PDFsam.PDFsam",
+      "choco": "pdfsam",
+      "desc": "PDFsam Basic is a free and open-source tool for splitting, merging, and rotating PDF files."
+    },
+    "simplenote": {
+      "winget": "Automattic.Simplenote",
+      "choco": "simplenote",
+      "desc": "Simplenote is an easy way to keep notes, lists, ideas and more."
+    },
+    "Sumatra PDF": {
+      "winget": "SumatraPDF.SumatraPDF",
+      "choco": "sumatrapdf",
+      "desc": "Sumatra PDF is a lightweight and fast PDF viewer with minimalistic design."
+    },
+    "PDFgear": {
+      "winget": "PDFgear.PDFgear",
+      "choco": "n/a",
+      "desc": "PDFgear is a piece of full-featured PDF management software for Windows, Mac, and mobile, and it's completely free to use."
+    },
+    "WinMerge": {
+      "winget": "WinMerge.WinMerge",
+      "choco": "winmerge",
+      "desc": "WinMerge is a visual text file and directory comparison tool for Windows."
+    },
+    "Xournal++": {
+      "winget": "Xournal++.Xournal++",
+      "choco": "xournalplusplus",
+      "desc": "Xournal++ is an open-source handwriting notetaking software with PDF annotation capabilities."
+    },
+    "Zim Desktop Wiki": {
+      "winget": "Zimwiki.Zim",
+      "choco": "zim",
+      "desc": "Zim Desktop Wiki is a graphical text editor used to maintain a collection of wiki pages."
+    },
+    "Znote": {
+      "winget": "alagrede.znote",
+      "choco": "n/a",
+      "desc": "Znote is a note-taking application."
+    },
+    "Zotero": {
+      "winget": "DigitalScholar.Zotero",
+      "choco": "zotero",
+      "desc": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share your research materials."
+    }
+  }
+}

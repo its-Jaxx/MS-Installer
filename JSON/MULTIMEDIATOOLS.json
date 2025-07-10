@@ -1,0 +1,294 @@
+{
+  "Multimedia Tools": {
+    "AIMP (Music Player)": {
+      "winget": "AIMP.AIMP",
+      "choco": "aimp",
+      "desc": "AIMP is a feature-rich music player with support for various audio formats, playlists, and customizable user interface."
+    },
+    "Audacity": {
+      "winget": "Audacity.Audacity",
+      "choco": "audacity",
+      "desc": "Audacity is a free and open-source audio editing software known for its powerful recording and editing capabilities."
+    },
+    "Blender (3D Graphics)": {
+      "winget": "BlenderFoundation.Blender",
+      "choco": "blender",
+      "desc": "Blender is a powerful open-source 3D creation suite, offering modeling, sculpting, animation, and rendering tools."
+    },
+    "Clementine": {
+      "winget": "Clementine.Clementine",
+      "choco": "clementine",
+      "desc": "Clementine is a modern music player and library organizer, supporting various audio formats and online radio services."
+    },
+    "darktable": {
+      "winget": "darktable.darktable",
+      "choco": "darktable",
+      "desc": "Open-source photo editing tool, offering an intuitive interface, advanced editing capabilities, and a non-destructive workflow for seamless image enhancement."
+    },
+    "digiKam": {
+      "winget": "KDE.digikam",
+      "choco": "digikam",
+      "desc": "digiKam is an advanced open-source photo management software with features for organizing, editing, and sharing photos."
+    },
+    "EarTrumpet (Audio)": {
+      "winget": "File-New-Project.EarTrumpet",
+      "choco": "eartrumpet",
+      "desc": "EarTrumpet is an audio control app for Windows, providing a simple and intuitive interface for managing sound settings."
+    },
+    "FFmpeg (full)": {
+      "winget": "Gyan.FFmpeg",
+      "choco": "ffmpeg-full",
+      "desc": "FFmpeg is a powerful multimedia processing tool that enables users to convert, edit, and stream audio and video files with a vast range of codecs and formats. | Note: FFmpeg can not be uninstalled using winget."
+    },
+    "Fire Alpaca": {
+      "winget": "FireAlpaca.FireAlpaca",
+      "choco": "firealpaca",
+      "desc": "Fire Alpaca is a free digital painting software that provides a wide range of drawing tools and a user-friendly interface."
+    },
+    "Flameshot (Screenshots)": {
+      "winget": "Flameshot.Flameshot",
+      "choco": "flameshot",
+      "desc": "Flameshot is a powerful yet simple to use screenshot software, offering annotation and editing features."
+    },
+    "Lightshot (Screenshots)": {
+      "winget": "Skillbrains.Lightshot",
+      "choco": "lightshot",
+      "desc": "Ligthshot is an Easy-to-use, light-weight screenshot software tool, where you can optionally edit your screenshots using different tools, share them via Internet and/or save to disk, and customize the available options."
+    },
+    "foobar2000 (Music Player)": {
+      "winget": "PeterPawlowski.foobar2000",
+      "choco": "foobar2000",
+      "desc": "foobar2000 is a highly customizable and extensible music player for Windows, known for its modular design and advanced features."
+    },
+    "FreeCAD": {
+      "winget": "FreeCAD.FreeCAD",
+      "choco": "freecad",
+      "desc": "FreeCAD is a parametric 3D CAD modeler, designed for product design and engineering tasks, with a focus on flexibility and extensibility."
+    },
+    "FxSound": {
+      "winget": "FxSound.FxSound",
+      "choco": "fxsound",
+      "desc": "FxSound is free open-source software to boost sound quality, volume, and bass. Including an equalizer, effects, and presets for customized audio."
+    },
+    "GIMP (Image Editor)": {
+      "winget": "GIMP.GIMP.3",
+      "choco": "gimp",
+      "desc": "GIMP is a versatile open-source raster graphics editor used for tasks such as photo retouching, image editing, and image composition."
+    },
+    "Greenshot (Screenshots)": {
+      "winget": "Greenshot.Greenshot",
+      "choco": "greenshot",
+      "desc": "Greenshot is a light-weight screenshot software tool with built-in image editor and customizable capture options."
+    },
+    "HandBrake": {
+      "winget": "HandBrake.HandBrake",
+      "choco": "handbrake",
+      "desc": "HandBrake is an open-source video transcoder, allowing you to convert video from nearly any format to a selection of widely supported codecs."
+    },
+    "Harmonoid": {
+      "winget": "Harmonoid.Harmonoid",
+      "choco": "n/a",
+      "desc": "Plays and manages your music library. Looks beautiful and juicy. Playlists, visuals, synced lyrics, pitch shift, volume boost and more."
+    },
+    "ImageGlass (Image Viewer)": {
+      "winget": "DuongDieuPhap.ImageGlass",
+      "choco": "imageglass",
+      "desc": "ImageGlass is a versatile image viewer with support for various image formats and a focus on simplicity and speed."
+    },
+    "ImgBurn": {
+      "winget": "LIGHTNINGUK.ImgBurn",
+      "choco": "imgburn",
+      "desc": "ImgBurn is a lightweight CD, DVD, HD-DVD, and Blu-ray burning application with advanced features for creating and burning disc images."
+    },
+    "Inkscape": {
+      "winget": "Inkscape.Inkscape",
+      "choco": "inkscape",
+      "desc": "Inkscape is a powerful open-source vector graphics editor, suitable for tasks such as illustrations, icons, logos, and more."
+    },
+    "iTunes": {
+      "winget": "Apple.iTunes",
+      "choco": "itunes",
+      "desc": "iTunes is a media player, media library, and online radio broadcaster application developed by Apple Inc."
+    },
+    "Jellyfin Media Player": {
+      "winget": "Jellyfin.JellyfinMediaPlayer",
+      "choco": "jellyfin-media-player",
+      "desc": "Jellyfin Media Player is a client application for the Jellyfin media server, providing access to your media library."
+    },
+    "Jellyfin Server": {
+      "winget": "Jellyfin.Server",
+      "choco": "jellyfin",
+      "desc": "Jellyfin Server is an open-source media server software, allowing you to organize and stream your media library."
+    },
+    "Kdenlive (Video Editor)": {
+      "winget": "KDE.Kdenlive",
+      "choco": "kdenlive",
+      "desc": "Kdenlive is an open-source video editing software with powerful features for creating and editing professional-quality videos."
+    },
+    "K-Lite Codec Standard": {
+      "winget": "CodecGuide.K-LiteCodecPack.Standard",
+      "choco": "k-litecodecpack-standard",
+      "desc": "K-Lite Codec Pack Standard is a collection of audio and video codecs and related tools, providing essential components for media playback."
+    },
+    "Kodi Media Center": {
+      "winget": "XBMCFoundation.Kodi",
+      "choco": "kodi",
+      "desc": "Kodi is an open-source media center application that allows you to play and view most videos, music, podcasts, and other digital media files."
+    },
+    "Krita (Image Editor)": {
+      "winget": "KDE.Krita",
+      "choco": "krita",
+      "desc": "Krita is a powerful open-source painting application. It is designed for concept artists, illustrators, matte and texture artists, and the VFX industry."
+    },
+    "Modern Flyouts": {
+      "winget": "ModernFlyouts.ModernFlyouts",
+      "choco": "n/a",
+      "desc": "An open source, modern, Fluent Design-based set of flyouts for Windows."
+    },
+    "Media Player Classic - Home Cinema": {
+      "winget": "clsid2.mpc-hc",
+      "choco": "mpc-hc-clsid2",
+      "desc": "Media Player Classic - Home Cinema (MPC-HC) is a free and open-source video and audio player for Windows. MPC-HC is based on the original Guliverkli project and contains many additional features and bug fixes."
+    },
+    "Equalizer APO": {
+      "winget": "n/a",
+      "choco": "equalizerapo",
+      "desc": "Equalizer APO is a parametric / graphic equalizer for Windows."
+    },
+    "MuseScore": {
+      "winget": "Musescore.Musescore",
+      "choco": "musescore",
+      "desc": "Create, play back and print beautiful sheet music with free and easy to use music notation software MuseScore."
+    },
+    "MusicBee (Music Player)": {
+      "winget": "MusicBee.MusicBee",
+      "choco": "musicbee",
+      "desc": "MusicBee is a customizable music player with support for various audio formats. It includes features like an integrated search function, tag editing, and more."
+    },
+    "Mp3tag (Metadata Audio Editor)": {
+      "winget": "Mp3tag.Mp3tag",
+      "choco": "mp3tag",
+      "desc": "Mp3tag is a powerful and yet easy-to-use tool to edit metadata of common audio formats."
+    },
+    "TagScanner (Tag Scanner)": {
+      "winget": "SergeySerkov.TagScanner",
+      "choco": "tagscanner",
+      "desc": "TagScanner is a powerful tool for organizing and managing your music collection"
+    },
+    "nGlide (3dfx compatibility)": {
+      "winget": "ZeusSoftware.nGlide",
+      "choco": "n/a",
+      "desc": "nGlide is a 3Dfx Voodoo Glide wrapper. It allows you to play games that use Glide API on modern graphics cards without the need for a 3Dfx Voodoo graphics card."
+    },
+    "Nomacs (Image viewer)": {
+      "winget": "nomacs.nomacs",
+      "choco": "nomacs",
+      "desc": "Nomacs is a free, open-source image viewer that supports multiple platforms. It features basic image editing capabilities and supports a variety of image formats."
+    },
+    "OBS Studio": {
+      "winget": "OBSProject.OBSStudio",
+      "choco": "obs-studio",
+      "desc": "OBS Studio is a free and open-source software for video recording and live streaming. It supports real-time video/audio capturing and mixing, making it popular among content creators."
+    },
+    "OpenSCAD": {
+      "winget": "OpenSCAD.OpenSCAD",
+      "choco": "openscad",
+      "desc": "OpenSCAD is a free and open-source script-based 3D CAD modeler. It is especially useful for creating parametric designs for 3D printing."
+    },
+    "Paint.NET": {
+      "winget": "dotPDN.PaintDotNet",
+      "choco": "paint.net",
+      "desc": "Paint.NET is a free image and photo editing software for Windows. It features an intuitive user interface and supports a wide range of powerful editing tools."
+    },
+    "Plex Media Server": {
+      "winget": "Plex.PlexMediaServer",
+      "choco": "plexmediaserver",
+      "desc": "Plex Media Server is a media server software that allows you to organize and stream your media library. It supports various media formats and offers a wide range of features."
+    },
+    "Plex Desktop": {
+      "winget": "Plex.Plex",
+      "choco": "plex",
+      "desc": "Plex Desktop for Windows is the front end for Plex Media Server."
+    },
+    "Spotify": {
+      "winget": "Spotify.Spotify",
+      "choco": "spotify",
+      "desc": "Spotify is a digital music service that gives you access to millions of songs, podcasts, and videos from artists all over the world."
+    },
+    "ShareX (Screenshots)": {
+      "winget": "ShareX.ShareX",
+      "choco": "sharex",
+      "desc": "ShareX is a free and open-source screen capture and file sharing tool. It supports various capture methods and offers advanced features for editing and sharing screenshots."
+    },
+    "Strawberry (Music Player)": {
+      "winget": "StrawberryMusicPlayer.Strawberry",
+      "choco": "strawberrymusicplayer",
+      "desc": "Strawberry is an open-source music player that focuses on music collection management and audio quality. It supports various audio formats and features a clean user interface."
+    },
+    "Stremio": {
+      "winget": "Stremio.Stremio",
+      "choco": "stremio",
+      "desc": "Stremio is a media center application that allows users to organize and stream their favorite movies, TV shows, and video content."
+    },
+    "Tidal": {
+      "winget": "9NNCB5BS59PH",
+      "choco": "n/a",
+      "desc": "Tidal is a music streaming service known for its high-fidelity audio quality and exclusive content. It offers a vast library of songs and curated playlists."
+    },
+    "Videomass": {
+      "winget": "GianlucaPernigotto.Videomass",
+      "choco": "n/a",
+      "desc": "Videomass by GianlucaPernigotto is a cross-platform GUI for FFmpeg, streamlining multimedia file processing with batch conversions and user-friendly features."
+    },
+    "VLC (Video Player)": {
+      "winget": "VideoLAN.VLC",
+      "choco": "vlc",
+      "desc": "VLC Media Player is a free and open-source multimedia player that supports a wide range of audio and video formats. It is known for its versatility and cross-platform compatibility."
+    },
+    "Voicemeeter (Audio)": {
+      "winget": "VB-Audio.Voicemeeter",
+      "choco": "voicemeeter",
+      "desc": "Voicemeeter is a virtual audio mixer that allows you to manage and enhance audio streams on your computer. It is commonly used for audio recording and streaming purposes."
+    },
+    "Voicemeeter Potato": {
+      "winget": "VB-Audio.Voicemeeter.Potato",
+      "choco": "voicemeeter-potato",
+      "desc": "Voicemeeter Potato is the ultimate version of the Voicemeeter Audio Mixer Application endowed with Virtual Audio Device to mix and manage any audio sources from or to any audio devices or applications."
+    },
+    "Yt-dlp": {
+      "winget": "yt-dlp.yt-dlp",
+      "choco": "yt-dlp",
+      "desc": "Command-line tool that allows you to download videos from YouTube and other supported sites. It is an improved version of the popular youtube-dl."
+    },
+    "QGIS": {
+      "winget": "OSGeo.QGIS",
+      "choco": "qgis",
+      "desc": "QGIS (Quantum GIS) is an open-source Geographic Information System (GIS) software that enables users to create, edit, visualize, analyze, and publish geospatial information on Windows, Mac, and Linux platforms."
+    },
+    "SMPlayer": {
+      "winget": "SMPlayer.SMPlayer",
+      "choco": "smplayer",
+      "desc": "SMPlayer is a free media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats."
+    },
+    "NDI Tools": {
+      "winget": "NDI.NDITools",
+      "choco": "n/a",
+      "desc": "NDI, or Network Device Interface, is a video connectivity standard that enables multimedia systems to identify and communicate with one another over IP and to encode, transmit, and receive high-quality, low latency, frame-accurate video and audio, and exchange metadata in real-time."
+    },
+    "Kicad": {
+      "winget": "KiCad.KiCad",
+      "choco": "n/a",
+      "desc": "Kicad is an open-source EDA tool. It's a good starting point for those who want to do electrical design and is even used by professionals in the industry."
+    },
+    "Shotcut": {
+      "winget": "Meltytech.Shotcut",
+      "choco": "n/a",
+      "desc": "Shotcut is a free, open source, cross-platform video editor."
+    },
+    "Subtitle Edit": {
+      "winget": "Nikse.SubtitleEdit",
+      "choco": "n/a",
+      "desc": "Subtitle Edit is a free and open source editor for video subtitles."
+    }
+  }
+}

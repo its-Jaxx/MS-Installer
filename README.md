@@ -15,7 +15,7 @@
     Winget | Chocolatey
     --- | ---
 
-3. Choose output installer script format:
+- Choose output installer script format:
 
     Script format | Extension
     |:---:|:---:|
@@ -23,10 +23,10 @@
     `PowerShell` | `.ps1`
     `Batch` | `.bat`
 
-4. Quick search filter
-5. Descriptive tooltips for each application
-6. Double buffering - though very poorly done since it's not native to `tkinter`
-7. Automatic `Admin` elevation contained in each installer script
+- Quick search filter
+- Descriptive tooltips for each application
+- Double buffering - though very poorly done since it's not native to `tkinter`
+- Automatic `Admin` elevation contained in each installer script
 </details>
 
 ---
@@ -34,8 +34,8 @@
 <details>
 <summary>Requirements</summary>
 
-* Python 3.x
-* `Windows OS`
+- Python 3.x
+- `Windows OS`
 </details>
 
 ---

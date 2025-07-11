@@ -1,9 +1,11 @@
 import tkinter as tk
 from tkinter import messagebox, ttk
-import os, webbrowser, json
+import os, webbrowser, json, asyncio, aiohttp
 
 exec("try:\n import requests\nexcept ImportError:\n import subprocess, sys\n subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'requests'])")
 import requests
+
+show_selected_only = False
 
 json_files = [
     "BROWSERS.json",
@@ -20,15 +22,22 @@ json_files = [
 base_url = "https://raw.githubusercontent.com/its-Jaxx/MS-Installer/main/JSON/"
 headers = {"User-Agent": "Mozilla/5.0"}
 
-apps = {}
-
-for filename in json_files:
+async def fetch_json(session, filename):
     url = base_url + filename
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    data = response.json()
-    category = next(iter(data))
-    apps[category] = data[category]
+    async with session.get(url) as response:
+        response.raise_for_status()
+        text = await response.text()
+        data = json.loads(text)
+        category = next(iter(data))
+        return category, data[category]
+
+async def fetch_all():
+    async with aiohttp.ClientSession(headers=headers) as session:
+        tasks = [fetch_json(session, filename) for filename in json_files]
+        results = await asyncio.gather(*tasks)
+        return {category: content for category, content in results}
+
+apps = asyncio.run(fetch_all())
 
 class ToolTip:
     def __init__(self, widget, text, delay=1000):
@@ -114,12 +123,28 @@ def clear_selection():
 def about_installer():
     webbrowser.open("https://github.com/its-Jaxx/MS-Installer?tab=readme-ov-file")
 
+def show_selected():
+    global show_selected_only
+    show_selected_only = not show_selected_only
+    if show_selected_only:
+        populate_apps(selected_only=True)
+        show_selected_btn.config(text="Show Full List")
+    else:
+        populate_apps(search_var.get().lower())
+        show_selected_btn.config(text="Show Selected Apps")
+
 def btn_gen(btn_text, btn_cmd, pady=10):
     tk.Button(left_frame, text=btn_text, command=btn_cmd,
           bg=BOX_COLOR, fg=BTN_TEXT_COLOR, activebackground=BUTTON_ACTIVE, activeforeground=TEXT_COLOR,
           relief="flat", highlightthickness=0).pack(pady=(pady, 10), padx=20, fill="x")
 
 btn_gen("Clear Selection", clear_selection, 40)
+
+show_selected_btn = tk.Button(left_frame, text="Show Selected Apps", command=show_selected,
+    bg=BOX_COLOR, fg=BTN_TEXT_COLOR, activebackground=BUTTON_ACTIVE, activeforeground=TEXT_COLOR,
+    relief="flat", highlightthickness=0)
+show_selected_btn.pack(pady=(10, 10), padx=20, fill="x")
+
 btn_gen("Generate Installer", lambda: generate_installer())
 btn_gen("About", lambda: about_installer())
 
@@ -204,7 +229,7 @@ def init_app():
     populate_apps()
     root.update()
 
-def populate_apps(filter_text=""):
+def populate_apps(filter_text="", selected_only=False):
     global last_columns, current_canvas, current_frame
 
     current_width = canvas_frame.winfo_width()
@@ -222,7 +247,12 @@ def populate_apps(filter_text=""):
 
     filter_text = filter_text.lower().strip()
     for category, items in apps.items():
-        filtered_items = {k: v for k, v in items.items() if filter_text in k.lower()} if filter_text else items
+
+        if selected_only:
+            filtered_items = {k: v for k, v in items.items() if k in selected_apps}
+        else:
+            filtered_items = {k: v for k, v in items.items() if filter_text in k.lower()} if filter_text else items
+
         if not filtered_items:
             continue
         cat_label = tk.Label(frame_to_draw, text=category, bg=BOX_COLOR, fg=TEXT_COLOR, font=("Segoe UI", 10, "bold"))

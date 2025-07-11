@@ -7,6 +7,29 @@
 ---
 
 <details>
+<summary>Versions</summary>
+
+<details>
+<summary>Version 2 (July 11, 2025)</summary>
+
+- Added `async` to speed up booting time
+- Added `Show Selected Apps` button to easily view all selected apps
+</details>
+
+<details>
+<summary>Version 1 (July 10, 2025)</summary>
+
+- Basic search functions
+- Basic GUI look
+- Supports `Python`, `PowerShell` and `Batch`
+- Supports `Winget` and `Chocolatey`
+</details>
+
+</details>
+
+---
+
+<details>
 <summary>Features (Detailed)</summary>
 
 - Ability to select multiple applications to generate installers for

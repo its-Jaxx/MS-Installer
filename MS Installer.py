@@ -127,7 +127,7 @@ def show_selected():
     global show_selected_only
     show_selected_only = not show_selected_only
     if show_selected_only:
-        populate_apps(selected_only=True)
+        populate_apps(search_var.get().lower(), selected_only=True)
         show_selected_btn.config(text="Show Full List")
     else:
         populate_apps(search_var.get().lower())
@@ -247,9 +247,9 @@ def populate_apps(filter_text="", selected_only=False):
 
     filter_text = filter_text.lower().strip()
     for category, items in apps.items():
-
+        
         if selected_only:
-            filtered_items = {k: v for k, v in items.items() if k in selected_apps}
+            filtered_items = {k: v for k, v in items.items() if k in selected_apps and (filter_text in k.lower() if filter_text else True)}
         else:
             filtered_items = {k: v for k, v in items.items() if filter_text in k.lower()} if filter_text else items
 
@@ -297,7 +297,7 @@ def populate_apps(filter_text="", selected_only=False):
     current_frame = frame_to_draw
 
 def update_search(*args):
-    populate_apps(search_var.get().lower())
+    populate_apps(search_var.get().lower(), selected_only=show_selected_only)
 
 search_var.trace_add("write", update_search)
 

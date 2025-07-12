@@ -10,6 +10,12 @@
 <summary>Versions</summary>
 
 <details>
+<summary>Version 3 (July 12, 2025)</summary>
+
+- Modified `Show Selected Apps` to allow searching within only selected apps
+</details>
+
+<details>
 <summary>Version 2 (July 11, 2025)</summary>
 
 - Added `async` to speed up booting time

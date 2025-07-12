@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, ttk
-import os, webbrowser, json, asyncio, aiohttp
+import os, webbrowser, json, threading, queue
 
 exec("try:\n import requests\nexcept ImportError:\n import subprocess, sys\n subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'requests'])")
 import requests
@@ -22,22 +22,9 @@ json_files = [
 base_url = "https://raw.githubusercontent.com/its-Jaxx/MS-Installer/main/JSON/"
 headers = {"User-Agent": "Mozilla/5.0"}
 
-async def fetch_json(session, filename):
-    url = base_url + filename
-    async with session.get(url) as response:
-        response.raise_for_status()
-        text = await response.text()
-        data = json.loads(text)
-        category = next(iter(data))
-        return category, data[category]
+apps = {}
 
-async def fetch_all():
-    async with aiohttp.ClientSession(headers=headers) as session:
-        tasks = [fetch_json(session, filename) for filename in json_files]
-        results = await asyncio.gather(*tasks)
-        return {category: content for category, content in results}
-
-apps = asyncio.run(fetch_all())
+status_queue = queue.Queue()
 
 class ToolTip:
     def __init__(self, widget, text, delay=1000):
@@ -169,6 +156,16 @@ search_icon = tk.Label(
 )
 search_icon.grid(row=0, column=1, sticky="w")
 
+status_label = tk.Label(
+    right_frame, 
+    text="Initializing...", 
+    bg=BOX_COLOR, 
+    fg=TEXT_COLOR,
+    anchor="w",
+    font=("Segoe UI", 9)
+)
+status_label.grid(row=1, column=0, sticky="ew", padx=10, pady=(0, 5))
+
 canvas_frame = tk.Frame(right_frame, bg=BOX_COLOR)
 canvas_frame.grid(row=2, column=0, sticky="nsew")
 canvas_frame.rowconfigure(0, weight=1)
@@ -178,41 +175,27 @@ canvas = tk.Canvas(canvas_frame, bg=BOX_COLOR, highlightthickness=0)
 scrollbar = ttk.Scrollbar(canvas_frame, orient="vertical", command=canvas.yview)
 scrollable_frame = tk.Frame(canvas, bg=BOX_COLOR)
 
-canvas_back = tk.Canvas(canvas_frame, bg=BOX_COLOR, highlightthickness=0)
-scrollable_frame_back = tk.Frame(canvas_back, bg=BOX_COLOR)
-canvas_back.create_window((0, 0), window=scrollable_frame_back, anchor="nw")
-
-def _on_scroll(*args):
-    canvas.yview(*args)
-    canvas_back.yview(*args)
+canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
 
 def _on_yscroll(first, last):
     scrollbar.set(first, last)
 
 canvas.configure(yscrollcommand=_on_yscroll)
-canvas_back.configure(yscrollcommand=_on_yscroll)
-scrollbar.config(command=_on_scroll)
-
-scrollable_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+scrollbar.config(command=canvas.yview)
 
 def _on_mousewheel(event):
-    current_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+    canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
 
 canvas.bind_all("<MouseWheel>", _on_mousewheel)
-canvas.bind_all("<Button-4>", lambda e: current_canvas.yview_scroll(-1, "units"))
-canvas.bind_all("<Button-5>", lambda e: current_canvas.yview_scroll(1, "units"))
-
-canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
-canvas.configure(yscrollcommand=scrollbar.set)
+canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-1, "units"))
+canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(1, "units"))
 
 canvas.grid(row=0, column=0, sticky="nsew")
-canvas_back.grid_forget()
 scrollbar.grid(row=0, column=1, sticky="ns")
-current_canvas = canvas
-current_frame = scrollable_frame
 
 app_buttons, app_widgets = {}, {}
 last_columns = 0
+processing_category = False
 
 def calculate_columns(available_width):
     return min(max(1, available_width // 140), 10)
@@ -226,75 +209,114 @@ def toggle_app(app_name, button):
         button.config(bg=HIGHLIGHT_COLOR)
 
 def init_app():
-    populate_apps()
-    root.update()
+    threading.Thread(target=fetch_json_files, daemon=True).start()
+    root.after(100, check_status_queue)
+
+def fetch_json_files():
+    status_queue.put(("status", "Starting downloads..."))
+    
+    for filename in json_files:
+        status_queue.put(("status", f"Fetching {filename}..."))
+        try:
+            url = base_url + filename
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+            data = json.loads(response.text)
+            category = next(iter(data))
+            apps[category] = data[category]
+            status_queue.put(("category", category))
+        except Exception as e:
+            status_queue.put(("error", f"Error fetching {filename}: {str(e)}"))
+    
+    status_queue.put(("status", ""))
+
+def check_status_queue():
+    try:
+        while True:
+            msg_type, content = status_queue.get_nowait()
+            
+            if msg_type == "status":
+                status_label.config(text=content)
+            
+            elif msg_type == "category":
+                status_label.config(text=f"Processing {content}...")
+                populate_apps(search_var.get().lower(), selected_only=show_selected_only)
+            
+            elif msg_type == "error":
+                status_label.config(text=content)
+                messagebox.showerror("Download Error", content)
+        
+    except queue.Empty:
+        pass
+    
+    root.after(100, check_status_queue)
 
 def populate_apps(filter_text="", selected_only=False):
-    global last_columns, current_canvas, current_frame
+    global last_columns, processing_category
+    
+    if processing_category:
+        return
+    
+    processing_category = True
+    try:
+        current_width = canvas_frame.winfo_width()
+        if current_width < 100:
+            current_width = root.winfo_width() - 200
+        available_width = max(300, current_width - 40)
+        max_cols = calculate_columns(available_width)
+        last_columns = max_cols
 
-    current_width = canvas_frame.winfo_width()
-    if current_width < 100:
-        current_width = root.winfo_width() - 200
-    available_width = max(300, current_width - 40)
-    max_cols = calculate_columns(available_width)
-    last_columns = max_cols
+        for widget in scrollable_frame.winfo_children():
+            widget.destroy()
 
-    frame_to_draw = scrollable_frame_back if current_frame == scrollable_frame else scrollable_frame
-    canvas_to_draw = canvas_back if current_canvas == canvas else canvas
+        filter_text = filter_text.lower().strip()
+        for category, items in list(apps.items()):
+            if selected_only:
+                filtered_items = {k: v for k, v in items.items() if k in selected_apps and (filter_text in k.lower() if filter_text else True)}
+            else:
+                filtered_items = {k: v for k, v in items.items() if filter_text in k.lower()} if filter_text else items
 
-    for widget in frame_to_draw.winfo_children():
-        widget.destroy()
-
-    filter_text = filter_text.lower().strip()
-    for category, items in apps.items():
-        
-        if selected_only:
-            filtered_items = {k: v for k, v in items.items() if k in selected_apps and (filter_text in k.lower() if filter_text else True)}
-        else:
-            filtered_items = {k: v for k, v in items.items() if filter_text in k.lower()} if filter_text else items
-
-        if not filtered_items:
-            continue
-        cat_label = tk.Label(frame_to_draw, text=category, bg=BOX_COLOR, fg=TEXT_COLOR, font=("Segoe UI", 10, "bold"))
-        cat_label.pack(anchor="w", pady=(15, 5), padx=10)
-
-        group_frame = tk.Frame(frame_to_draw, bg=BOX_COLOR)
-        group_frame.pack(anchor="w", fill="x", padx=20)
-
-        row = col = 0
-        manager = package_manager.get()
-        for app_name, app_data in filtered_items.items():
-            if app_data.get(manager, "").lower() == "n/a":
+            if not filtered_items:
                 continue
-            display_text = app_name if len(app_name) <= 21 else app_name[:16] + "..."
-            btn = tk.Button(
-                group_frame,
-                text=display_text,
-                width=15,
-                bg=HIGHLIGHT_COLOR if app_name in selected_apps else BOX_COLOR,
-                fg=BTN_TEXT_COLOR,
-                relief="flat",
-                activebackground=BUTTON_ACTIVE,
-                activeforeground=TEXT_COLOR,
-                highlightthickness=0,
-                command=lambda name=app_name: toggle_app(name, app_buttons[name])
-            )
-            btn.grid(row=row, column=col, padx=5, pady=1, sticky="w")
-            app_buttons[app_name] = btn
-            app_widgets[app_name] = (btn, group_frame, cat_label)
-            if "desc" in app_data:
-                ToolTip(btn, app_data["desc"])
-            col += 1
-            if col >= max_cols:
-                col = 0; row += 1
+            
+            cat_label = tk.Label(scrollable_frame, text=category, bg=BOX_COLOR, fg=TEXT_COLOR, font=("Segoe UI", 10, "bold"))
+            cat_label.pack(anchor="w", pady=(15, 5), padx=10)
 
-    canvas_to_draw.update_idletasks()
-    canvas_to_draw.configure(scrollregion=canvas_to_draw.bbox("all"))
+            group_frame = tk.Frame(scrollable_frame, bg=BOX_COLOR)
+            group_frame.pack(anchor="w", fill="x", padx=20)
 
-    current_canvas.grid_forget()
-    canvas_to_draw.grid(row=0, column=0, sticky="nsew")
-    current_canvas = canvas_to_draw
-    current_frame = frame_to_draw
+            row = col = 0
+            manager = package_manager.get()
+            for app_name, app_data in filtered_items.items():
+                if app_data.get(manager, "").lower() == "n/a":
+                    continue
+                display_text = app_name if len(app_name) <= 21 else app_name[:16] + "..."
+                btn = tk.Button(
+                    group_frame,
+                    text=display_text,
+                    width=15,
+                    bg=HIGHLIGHT_COLOR if app_name in selected_apps else BOX_COLOR,
+                    fg=BTN_TEXT_COLOR,
+                    relief="flat",
+                    activebackground=BUTTON_ACTIVE,
+                    activeforeground=TEXT_COLOR,
+                    highlightthickness=0,
+                    command=lambda name=app_name: toggle_app(name, app_buttons[name])
+                )
+                btn.grid(row=row, column=col, padx=5, pady=1, sticky="w")
+                app_buttons[app_name] = btn
+                app_widgets[app_name] = (btn, group_frame, cat_label)
+                if "desc" in app_data:
+                    ToolTip(btn, app_data["desc"])
+                col += 1
+                if col >= max_cols:
+                    col = 0; row += 1
+
+        canvas.update_idletasks()
+        canvas.config(scrollregion=canvas.bbox("all"))
+        
+    finally:
+        processing_category = False
 
 def update_search(*args):
     populate_apps(search_var.get().lower(), selected_only=show_selected_only)

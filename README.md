@@ -10,6 +10,13 @@
 <summary>Versions</summary>
 
 <details>
+<summary>Version 4 (July 12, 2025)</summary>
+
+- Removed use of `asyncio` and `aiohttp`
+- Made changes to the execution flow
+</details>
+
+<details>
 <summary>Version 3 (July 12, 2025)</summary>
 
 - Modified `Show Selected Apps` to allow searching within only selected apps

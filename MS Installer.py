@@ -201,11 +201,14 @@ def fetch_json_files():
 root = tk.Tk()
 root.title("MS Installer")
 root.geometry("1400x800")
-root.configure(bg="#1e1e1e")
+root.configure(bg="#262a2e")
 
-root.grid_rowconfigure(0, weight=1)
-root.grid_columnconfigure(0, weight=0)
-root.grid_columnconfigure(1, weight=1)
+main_frame = tk.Frame(root, bg="#262a2e")
+main_frame.pack(fill="both", expand=True)
+
+main_frame.grid_rowconfigure(0, weight=1)
+main_frame.grid_columnconfigure(0, weight=0)
+main_frame.grid_columnconfigure(1, weight=1)
 
 selected_apps = set()
 package_manager = tk.StringVar(value="winget")
@@ -213,13 +216,13 @@ package_manager.trace_add("write", lambda *args: populate_apps(search_var.get().
 installer_format = tk.StringVar(value="py")
 
 SEARCH_TEXT_COLOR = "#ffffff"
-BOX_COLOR = "#2d2d2d"
+BOX_COLOR = "#232629"
 HIGHLIGHT_COLOR = "#3b70a5"
 BUTTON_ACTIVE = "#4a90d9"
 TEXT_COLOR = "#ff00ff"
 BTN_TEXT_COLOR = "#d0d0d0"
 
-left_frame = tk.Frame(root, bg=BOX_COLOR, padx=10, pady=10)
+left_frame = tk.Frame(main_frame, bg=BOX_COLOR, padx=10, pady=10)
 left_frame.grid(row=0, column=0, sticky="ns", padx=10, pady=10)
 
 def options_btn(btn_text, btn_value, btn_var):
@@ -271,7 +274,7 @@ show_selected_btn.pack(pady=(10, 10), padx=20, fill="x")
 btn_gen("Generate Installer", lambda: generate_installer())
 btn_gen("About", lambda: about_installer())
 
-right_frame = tk.Frame(root, bg=BOX_COLOR, padx=10, pady=10)
+right_frame = tk.Frame(main_frame, bg=BOX_COLOR, padx=10, pady=10)
 right_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
 right_frame.grid_rowconfigure(2, weight=1)
 right_frame.grid_columnconfigure(0, weight=1)
@@ -282,7 +285,7 @@ search_frame.grid_columnconfigure(0, weight=1)
 
 search_var = tk.StringVar()
 search_entry = tk.Entry(
-    search_frame, textvariable=search_var, bg="#252526", fg=TEXT_COLOR,
+    search_frame, textvariable=search_var, bg="#000b16", fg=TEXT_COLOR,
     insertbackground=TEXT_COLOR, relief="flat", font=("Segoe UI", 10), width=40,
     highlightthickness=0, bd=2, highlightbackground="#444", highlightcolor="#555"
 )
@@ -308,8 +311,22 @@ canvas_frame.grid(row=2, column=0, sticky="nsew", padx=10, pady=(0, 10))
 canvas_frame.grid_rowconfigure(0, weight=1)
 canvas_frame.grid_columnconfigure(0, weight=1)
 
+style = ttk.Style()
+style.theme_use('default')
+style.configure("Custom.Vertical.TScrollbar", 
+                background="#4a4a4a",
+                troughcolor="#262a2e",
+                bordercolor="#262a2e",
+                lightcolor="#262a2e",
+                darkcolor="#262a2e",
+                arrowsize=0,
+                width=14)
+style.map("Custom.Vertical.TScrollbar", 
+          background=[('active', '#606060'), ('pressed', '#808080')])
+
 canvas = tk.Canvas(canvas_frame, bg=BOX_COLOR, highlightthickness=0)
-scrollbar = ttk.Scrollbar(canvas_frame, orient="vertical", command=canvas.yview)
+scrollbar = ttk.Scrollbar(canvas_frame, orient="vertical", command=canvas.yview, 
+                          style="Custom.Vertical.TScrollbar")
 scrollable_frame = tk.Frame(canvas, bg=BOX_COLOR)
 
 scrollable_frame_id = canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
@@ -400,6 +417,9 @@ def populate_apps(filter_text="", selected_only=False):
         max_cols = calculate_columns(available_width)
         last_columns = max_cols
 
+        canvas_frame.update_idletasks()
+        scrollable_frame.update_idletasks()
+        
         for widget in scrollable_frame.winfo_children():
             widget.destroy()
 
@@ -424,8 +444,12 @@ def populate_apps(filter_text="", selected_only=False):
                     cat_label.pack(anchor="w", pady=(15, 5), padx=10)
 
                     group_frame = tk.Frame(scrollable_frame, bg=BOX_COLOR)
-                    group_frame.pack(anchor="w", fill="x", padx=20)
+                    group_frame.pack(anchor="w", fill="x", expand=False, padx=20)
 
+                    # Configure all columns to left-align content
+                    for i in range(max_cols):
+                        group_frame.grid_columnconfigure(i, weight=1, uniform="group")
+                    
                     row = col = 0
                     manager = package_manager.get()
                     for app_name, app_data in filtered_items.items():
@@ -442,8 +466,10 @@ def populate_apps(filter_text="", selected_only=False):
                             activebackground=BUTTON_ACTIVE,
                             activeforeground=TEXT_COLOR,
                             highlightthickness=0,
+                            anchor="w",  # Ensure text is left-aligned inside button
                             command=lambda name=app_name: toggle_app(name, app_buttons.get(name))
                         )
+                        # Use sticky="w" to left-align the button within its grid cell
                         btn.grid(row=row, column=col, padx=5, pady=1, sticky="w")
                         app_buttons[app_name] = btn
                         if "desc" in app_data:
@@ -452,6 +478,7 @@ def populate_apps(filter_text="", selected_only=False):
                         if col >= max_cols:
                             col = 0; row += 1
 
+        canvas.update_idletasks()
         canvas.configure(scrollregion=canvas.bbox("all"))
         canvas.yview_moveto(0)
         
@@ -470,12 +497,9 @@ def handle_resize(event):
     if event.widget == root:
         if resize_timer:
             root.after_cancel(resize_timer)
-        resize_timer = root.after(150, lambda: populate_apps(search_var.get().lower()))
+        resize_timer = root.after(250, lambda: populate_apps(search_var.get().lower()))
 
 root.bind("<Configure>", handle_resize)
-
-manager = package_manager.get()
-fmt = installer_format.get()
 
 def winget_installer(pkg_id):
     return f"winget install --id {pkg_id} -e --accept-package-agreements --accept-source-agreements"
@@ -488,9 +512,9 @@ def create_manager_installer_lines():
     for app_name in selected_apps:
         for cat in apps:
             if app_name in apps[cat]:
-                pkg_id = apps[cat][app_name].get(manager)
+                pkg_id = apps[cat][app_name].get(package_manager.get())
                 if pkg_id and pkg_id.lower() != "n/a":
-                    if manager == "winget":
+                    if package_manager.get() == "winget":
                         lines.append(winget_installer(pkg_id))
                     else:
                         lines.append(choco_installer(pkg_id))
@@ -503,6 +527,7 @@ def generate_installer():
         return
     
     lines = []
+    fmt = installer_format.get()
 
     if fmt == "py":
         lines += [
@@ -523,7 +548,7 @@ def generate_installer():
         messagebox.showerror("Error", "Unsupported installer format.")
         return
 
-    filename = f"{manager}_installer.{fmt}"
+    filename = f"{package_manager.get()}_installer.{fmt}"
     with open(filename, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 

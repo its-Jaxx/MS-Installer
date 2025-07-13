@@ -10,6 +10,15 @@
 <summary>Versions</summary>
 
 <details>
+<summary>Version 6 (July 14, 2025)</summary>
+
+- Changed color to be more pleasing
+- Changed look of the scroll bar
+- Aligned apps to the left instead of center
+- Fixed an issue where changing `Package Manager` or `Installer Format` didn't do anything
+</details>
+
+<details>
 <summary>Version 5 (July 13, 2025)</summary>
 
 - Made everything `concurrent` yet again

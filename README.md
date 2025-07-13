@@ -10,6 +10,21 @@
 <summary>Versions</summary>
 
 <details>
+<summary>Version 5 (July 13, 2025)</summary>
+
+- Made everything `concurrent` yet again
+- Added `caching` to load things way faster if already downloaded
+- Auto install changed to accomodate for `urllib3`
+- Added `icon.ico`
+- Made it thread safely
+- Added easy-to-understand error messages
+- Added checks for SSL certificate
+- Ensured order in `apps` and `category` dictionary
+- Added retries to fetching
+- Changed how `.json` files were parsed
+</details>
+
+<details>
 <summary>Version 4 (July 12, 2025)</summary>
 
 - Removed use of `asyncio` and `aiohttp`
